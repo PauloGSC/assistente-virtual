@@ -1,3 +1,3 @@
-## Artigos de Object Detection
+## Artigos de Object Detection e Object Tracking
 
-Artigos dissertando sobre técnicas, ferramentas e frameworks de Object Detection (OD).
+Artigos dissertando sobre técnicas, ferramentas e frameworks de Object Detection e Object Tracking.
