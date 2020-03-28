@@ -1,4 +1,4 @@
-# :robot: Assistente Virtual :robot:
+# Desenvolvimento de um assistente virtual para segurança e saúde no trabalho, apoiado por Inteligência Artificial
 
 Projeto de Iniciação Científica do curso de [Ciência da Computação](http://cc.uffs.edu.br/) 
 da [UFFS campus Chapecó](https://www.uffs.edu.br/campi/chapeco).
