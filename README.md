@@ -16,3 +16,7 @@ da [UFFS campus Chapecó](https://www.uffs.edu.br/campi/chapeco).
 
 - Richard Henrique Herrera Silva (voluntário)
   - [GitHub](https://github.com/henriqueherrera)
+  
+- Raphael Borges dos Santos Filho (voluntário)
+  - [Github](http://github.com/oraphaborges)
+  - [LinkedIn](https://br.linkedin.com/in/raphael-borges-63a04591)
