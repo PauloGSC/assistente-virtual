@@ -3,6 +3,10 @@
 Projeto de Iniciação Científica do curso de [Ciência da Computação](http://cc.uffs.edu.br/) 
 da [UFFS campus Chapecó](https://www.uffs.edu.br/campi/chapeco).
 
+### :scroll: Especificação
+
+- [Formulário Único de Proposta](https://github.com/PauloGSC/assistente-virtual/blob/master/Pre-projeto/Documentos/Formulario%20Unico%20de%20Proposta.pdf)
+
 ### :man_teacher: Orientador
 
 - Claunir Pavan
