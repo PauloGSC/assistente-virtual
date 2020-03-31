@@ -5,7 +5,7 @@ da [UFFS campus Chapecó](https://www.uffs.edu.br/campi/chapeco).
 
 ### :scroll: Especificação
 
-- [Formulário Único de Proposta](https://github.com/PauloGSC/assistente-virtual/blob/master/Documentos/Formulario%20Unico%20de%20Proposta.pdf)
+- [Formulário Único de Proposta](../master/Documentos/Formulario%20Unico%20de%20Proposta.pdf)
 
 ### :man_teacher: Orientador
 
