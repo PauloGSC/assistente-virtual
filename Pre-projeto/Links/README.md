@@ -24,6 +24,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Regressão x Classificação](https://www.geeksforgeeks.org/regression-classification-supervised-machine-learning/)
 - [Dicas de performance para Deep Learning](https://machinelearningmastery.com/improve-deep-learning-performance/)
 - [Canal de Deep Learning (sentdex)](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)
+- [Site com utilidades de Machine Learning](https://www.kaggle.com/)
 
 ###### Object Detection
 
