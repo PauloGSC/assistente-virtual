@@ -27,6 +27,9 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Dicas de performance para Deep Learning](https://machinelearningmastery.com/improve-deep-learning-performance/)
 - [Canal de Deep Learning (sentdex)](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)
 - [Site com utilidades de Machine Learning](https://www.kaggle.com/)
+- [Site para gerenciar datasets](https://roboflow.ai/)
+- [Tutoriais de PyTorch](https://www.learnopencv.com/learn-pytorch/)
+- [Website de PyTorch](https://pytorch.org/)
 
 ###### Object Detection
 
@@ -36,13 +39,10 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Slides de Object Detection](http://ww2.inf.ufg.br/~anderson/deeplearning/20181/Curso_DeepLearning%20-%20Object%20Detection-%20SSD%20Fast%20Faster%20RCNN%20Yolo.pdf)
 - [Introdução a Object Recognition](https://machinelearningmastery.com/object-recognition-with-deep-learning/)
 - [Guia para treinar YOLOv3 com dataset próprio](https://blog.roboflow.ai/training-a-yolov3-object-detection-model-with-a-custom-dataset/)
-- [Site para gerenciar datasets](https://roboflow.ai/)
 - [Review detalhado de algoritmos de Object Detection](https://medium.com/@fractaldle/brief-overview-on-object-detection-algorithms-ec516929be93)
 - [Tutorial detalhado de Faster-RCNN com PyTorch](https://medium.com/@fractaldle/guide-to-build-faster-rcnn-in-pytorch-95b10c273439)
 - [Artigo sobre YOLOv3 com PyTorch](https://michhar.github.io/learning-from-learning-yolov3/)
 - [Guia de YOLO](https://hackernoon.com/understanding-yolo-f5a74bbc7967)
-- [Tutoriais de PyTorch](https://www.learnopencv.com/learn-pytorch/)
-- [Website de PyTorch](https://pytorch.org/)
 - [Tutoriais de YOLO no PyTorch](https://blog.paperspace.com/tag/series-yolo/)
 - [Explicação sobre YOLO](https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088)
 - [Outro guia para treinar YOLO com seu próprio dataset](https://medium.com/@anirudh.s.chakravarthy/training-yolov3-on-your-custom-dataset-19a1abbdaf09)
