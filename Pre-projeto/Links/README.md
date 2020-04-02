@@ -17,7 +17,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Discussão sobre hiperparâmetros](https://towardsdatascience.com/what-are-hyperparameters-and-how-to-tune-the-hyperparameters-in-a-deep-neural-network-d0604917584a)
 - [Basic Overview of Convolutional Neural Network (CNN)](https://medium.com/dataseries/basic-overview-of-convolutional-neural-network-cnn-4fcc7dbb4f17)
 - [Slides de DL de Stanford](https://cs230.stanford.edu/winter2020/)
-- [Cheatsheets de ML e DL](https://stanford.edu/~shervine/teaching/)
+- [Cheatsheets de ML e DL de Stanford](https://stanford.edu/~shervine/teaching/)
 - [Slides de CNN de Stanford](http://cs231n.stanford.edu/slides/) e [Complemento desses slides](https://cs231n.github.io/)
 - [Discussão sobre taxa de aprendizado](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/)
 - [Discussão sobre funções de ativação](https://www.analyticsvidhya.com/blog/2020/01/fundamentals-deep-learning-activation-functions-when-to-use-them/)
