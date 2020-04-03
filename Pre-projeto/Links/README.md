@@ -29,7 +29,9 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Canal de Deep Learning (sentdex)](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)
 - [Site com utilidades de Machine Learning](https://www.kaggle.com/)
 - [Site para gerenciar datasets](https://roboflow.ai/)
+- [Site de Deep Learning com OpenCV](https://www.learnopencv.com/)
 - [Tutoriais de PyTorch](https://www.learnopencv.com/learn-pytorch/)
+- [Artigo de YOLOv3 com OpenCV](https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/)
 - [Website de PyTorch](https://pytorch.org/)
 
 ###### Object Detection
