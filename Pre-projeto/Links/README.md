@@ -23,6 +23,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Discussão sobre funções de ativação](https://www.analyticsvidhya.com/blog/2020/01/fundamentals-deep-learning-activation-functions-when-to-use-them/)
 - [A Beginner's Guide To Understanding Convolutional Neural Networks](https://adeshpande3.github.io/A-Beginner%27s-Guide-To-Understanding-Convolutional-Neural-Networks/)
 - [Discussão sobre fine tuning](https://flyyufelix.github.io/2016/10/03/fine-tuning-in-keras-part1.html)
+- [Artigo sobre Transfer Learning com PyTorch](https://towardsdatascience.com/transfer-learning-picking-the-right-pre-trained-model-for-your-problem-bac69b488d16)
 - [Regressão x Classificação](https://www.geeksforgeeks.org/regression-classification-supervised-machine-learning/)
 - [Dicas de performance para Deep Learning](https://machinelearningmastery.com/improve-deep-learning-performance/)
 - [Canal de Deep Learning (sentdex)](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)
