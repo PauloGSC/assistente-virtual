@@ -16,6 +16,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Dicas de performance para Deep Learning](https://machinelearningmastery.com/improve-deep-learning-performance/)
 - [Canal de Deep Learning (sentdex)](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)
 
+&nbsp;
 
 - [Discussão sobre hiperparâmetros](https://towardsdatascience.com/what-are-hyperparameters-and-how-to-tune-the-hyperparameters-in-a-deep-neural-network-d0604917584a)
 - [Discussão sobre taxa de aprendizado](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/)
@@ -24,6 +25,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Explicação de batch normalization](https://www.learnopencv.com/batch-normalization-in-deep-networks/)
 - [Regressão x Classificação](https://www.geeksforgeeks.org/regression-classification-supervised-machine-learning/)
 
+&nbsp;
 
 - [A Beginner's Guide To Understanding Convolutional Neural Networks](https://adeshpande3.github.io/A-Beginner%27s-Guide-To-Understanding-Convolutional-Neural-Networks/)
 - [Basic Overview of Convolutional Neural Network (CNN)](https://medium.com/dataseries/basic-overview-of-convolutional-neural-network-cnn-4fcc7dbb4f17)
@@ -31,16 +33,19 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Convolutional Neural Nets in PyTorch](https://algorithmia.com/blog/convolutional-neural-nets-in-pytorch)
 - [Slides de CNN de Stanford](http://cs231n.stanford.edu/slides/) e [Complemento desses slides](https://cs231n.github.io/)
 
+&nbsp;
 
 - [Site com utilidades de Machine Learning](https://www.kaggle.com/)
 - [Site para gerenciar datasets](https://roboflow.ai/)
 
+&nbsp;
 
 - [Website de PyTorch](https://pytorch.org/)
 - [Tutoriais de PyTorch](https://www.learnopencv.com/learn-pytorch/)
 - [Artigo sobre Transfer Learning com PyTorch](https://towardsdatascience.com/transfer-learning-picking-the-right-pre-trained-model-for-your-problem-bac69b488d16)
 - [Finetuning em PyTorch](https://discuss.pytorch.org/t/how-to-perform-finetuning-in-pytorch/419)
 
+&nbsp;
 
 - [Introdução a Object Recognition](https://machinelearningmastery.com/object-recognition-with-deep-learning/)
 - [Image Classification vs. Object Detection vs. Image Segmentation](https://medium.com/analytics-vidhya/image-classification-vs-object-detection-vs-image-segmentation-f36db85fe81)
@@ -49,6 +54,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Review detalhado de algoritmos de Object Detection](https://medium.com/@fractaldle/brief-overview-on-object-detection-algorithms-ec516929be93)
 - [Pesquisa sobre técnicas de Object Detection](https://towardsdatascience.com/object-detection-using-deep-learning-approaches-an-end-to-end-theoretical-perspective-4ca27eee8a9a)
 
+&nbsp;
 
 - [Guia para treinar YOLOv3 com dataset próprio](https://blog.roboflow.ai/training-a-yolov3-object-detection-model-with-a-custom-dataset/)
 - [Tutorial detalhado de Faster-RCNN com PyTorch](https://medium.com/@fractaldle/guide-to-build-faster-rcnn-in-pytorch-95b10c273439)
@@ -59,6 +65,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Outro guia para treinar YOLO com seu próprio dataset](https://medium.com/@anirudh.s.chakravarthy/training-yolov3-on-your-custom-dataset-19a1abbdaf09)
 - [Artigo de YOLOv3 com OpenCV](https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/)
 
+&nbsp;
 
 - [Aplicação de Object Tracking](https://www.move-lab.com/blog/tracking-things-in-object-detection-videos)
 - [Guia de Object Detection e Tracking em PyTorch e com YOLOv3](https://towardsdatascience.com/object-detection-and-tracking-in-pytorch-b3cf1a696a98)
