@@ -18,6 +18,11 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 &nbsp;
 
+- [Explicação detalhada da divisão de datasets](https://machinelearningmastery.com/difference-test-validation-datasets/)
+- [Explicação resumida da divisão de datasets](https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7)
+
+&nbsp;
+
 - [Discussão sobre hiperparâmetros](https://towardsdatascience.com/what-are-hyperparameters-and-how-to-tune-the-hyperparameters-in-a-deep-neural-network-d0604917584a)
 - [Explicação sobre taxa de aprendizado](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/)
 - [Tutorial de taxa de aprendizado](https://machinelearningmastery.com/learning-rate-for-deep-learning-neural-networks/)
