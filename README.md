@@ -34,21 +34,21 @@ Todavia, em virtude da alta complexidade em implementar o sistema descrito acima
 
 ### :page_facing_up: Planejamento
 
-- [ ] Capacitação
-    - [ ] Deep Learning
-    - [ ] Redes Neurais Convolucionais (CNN)
-    - [ ] Object Detection
-    - [ ] Object Tracking
-- [ ] Definição da biblioteca de Deep Learning a ser usada
-- [ ] Definição do algoritmo de Object Detection a ser usado
-- [ ] Definição da(s) tarefa(s) a ser(em) usada(s) como base para o programa
-- [ ] Coleta de imagens/vídeos registrando as etapas da(s) tarefa(s)
-- [ ] Rotulagem das imagens obtidas
-- [ ] Construção da rede neural
-- [ ] Treinamento/ajuste e teste da rede neural
-- [ ] Codificação do algoritmo identificador de tarefas
-- [ ] Integração do detector com o algoritmo
-- [ ] Testes finais com vídeos em tempo real
+1. Capacitação
+    1. Deep Learning
+    2. Redes Neurais Convolucionais (CNN)
+    3. Object Detection
+    4. Object Tracking
+2. Definição da biblioteca de Deep Learning a ser usada
+3. Definição do algoritmo de Object Detection a ser usado
+4. Definição da(s) tarefa(s) a ser(em) usada(s) como base para o programa
+5. Coleta de imagens/vídeos registrando as etapas da(s) tarefa(s)
+6. Rotulagem das imagens obtidas
+7. Construção da rede neural
+8. Treinamento/ajuste e teste da rede neural
+9. Codificação do algoritmo identificador de tarefas
+10. Integração do detector com o algoritmo
+11. Testes finais com vídeos em tempo real
 
 
 [form]: ../master/Documentos/Formulario%20Unico%20de%20Proposta.pdf
