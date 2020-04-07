@@ -14,7 +14,6 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Site de Deep Learning com OpenCV](https://www.learnopencv.com/)
 - Slides de Deep Learning: [1](https://www.dropbox.com/s/7udotem1daz265x/AAAI2017-1-0205c.pdf?dl=0), [2](https://www.dropbox.com/s/qfz34ba3ftuli6b/AAAI2017-2-0203.pdf), [3](https://www.dropbox.com/s/6sbt9jmrwg414c8/AAAI2017-3-0331.pdf)
 - [Dicas de performance para Deep Learning](https://machinelearningmastery.com/improve-deep-learning-performance/)
-- [Canal de Deep Learning (sentdex)](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)
 
 &nbsp;
 
@@ -52,6 +51,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Tutoriais de PyTorch](https://www.learnopencv.com/learn-pytorch/)
 - [Artigo sobre Transfer Learning com PyTorch](https://towardsdatascience.com/transfer-learning-picking-the-right-pre-trained-model-for-your-problem-bac69b488d16)
 - [Finetuning em PyTorch](https://discuss.pytorch.org/t/how-to-perform-finetuning-in-pytorch/419)
+- [Canal de Deep Learning com PyTorch](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)
 
 &nbsp;
 
