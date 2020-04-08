@@ -64,6 +64,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 &nbsp;
 
+- [Apresentação do YOLO pelo seu criador](https://www.youtube.com/watch?v=NM6lrxy0bxs)
 - [Guia para treinar YOLOv3 com dataset próprio](https://blog.roboflow.ai/training-a-yolov3-object-detection-model-with-a-custom-dataset/)
 - [Tutorial detalhado de Faster-RCNN com PyTorch](https://medium.com/@fractaldle/guide-to-build-faster-rcnn-in-pytorch-95b10c273439)
 - [Artigo sobre YOLOv3 com PyTorch](https://michhar.github.io/learning-from-learning-yolov3/)
