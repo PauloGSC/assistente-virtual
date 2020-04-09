@@ -13,7 +13,6 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Cheatsheets de ML e DL de Stanford](https://stanford.edu/~shervine/teaching/)
 - [Site de Deep Learning com OpenCV](https://www.learnopencv.com/)
 - Slides de Deep Learning: [1](https://www.dropbox.com/s/7udotem1daz265x/AAAI2017-1-0205c.pdf?dl=0), [2](https://www.dropbox.com/s/qfz34ba3ftuli6b/AAAI2017-2-0203.pdf), [3](https://www.dropbox.com/s/6sbt9jmrwg414c8/AAAI2017-3-0331.pdf)
-- [Dicas de performance para Deep Learning](https://machinelearningmastery.com/improve-deep-learning-performance/)
 
 &nbsp;
 
@@ -31,6 +30,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Regressão x Classificação](https://www.geeksforgeeks.org/regression-classification-supervised-machine-learning/)
 - [Explicação sobre Gradiente Descendente](https://medium.com/@abhinav.mahapatra10/beginner-ml-basics-gradient-descent-31cc0732676f)
 - [Explicação sobre momentum](https://medium.com/@abhinav.mahapatra10/ml-advanced-momentum-in-machine-learning-what-is-nesterov-momentum-ad37ce1935fc)
+- [Dicas de performance para Deep Learning](https://machinelearningmastery.com/improve-deep-learning-performance/)
 
 &nbsp;
 
