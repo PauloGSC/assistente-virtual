@@ -4,7 +4,7 @@ Lista de modelos/exemplos que podem ser usados como base para a construção da 
 
 #### Explicação
 
-![Modelo](../master/.assets/modelo.png)
+![Modelo](../../master/.assets/modelo.png)
 
 Um modelo, em Deep Learning, é uma combinação de Arquitetura + Pesos.
 
