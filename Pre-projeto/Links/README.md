@@ -42,11 +42,6 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 &nbsp;
 
-- [Site com utilidades de Machine Learning](https://www.kaggle.com/)
-- [Site para gerenciar datasets](https://roboflow.ai/)
-
-&nbsp;
-
 - [Website de PyTorch](https://pytorch.org/)
 - [Tutoriais de PyTorch](https://www.learnopencv.com/learn-pytorch/)
 - [Artigo sobre Transfer Learning com PyTorch](https://towardsdatascience.com/transfer-learning-picking-the-right-pre-trained-model-for-your-problem-bac69b488d16)
@@ -65,6 +60,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 &nbsp;
 
 - [Apresentação do YOLO pelo seu criador](https://www.youtube.com/watch?v=NM6lrxy0bxs)
+- [Guia de YOLOv1, v2, v3 e v4](https://robocademy.com/2020/05/01/a-gentle-introduction-to-yolo-v4-for-object-detection-in-ubuntu-20-04/)
 - [Guia para treinar YOLOv3 com dataset próprio](https://blog.roboflow.ai/training-a-yolov3-object-detection-model-with-a-custom-dataset/)
 - [Tutorial detalhado de Faster-RCNN com PyTorch](https://medium.com/@fractaldle/guide-to-build-faster-rcnn-in-pytorch-95b10c273439)
 - [Artigo sobre YOLOv3 com PyTorch](https://michhar.github.io/learning-from-learning-yolov3/)
