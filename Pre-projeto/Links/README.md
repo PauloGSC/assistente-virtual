@@ -18,6 +18,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 - [Explicação detalhada da divisão de datasets](https://machinelearningmastery.com/difference-test-validation-datasets/)
 - [Explicação resumida da divisão de datasets](https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7)
+- [Lecture sobre datasets e classificadores (o começo é útil)](http://cseweb.ucsd.edu/~elkan/250Bwinter2012/classifiereval.pdf)
 
 &nbsp;
 
