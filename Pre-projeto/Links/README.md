@@ -23,15 +23,21 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 &nbsp;
 
 - [Discussão sobre hiperparâmetros](https://towardsdatascience.com/what-are-hyperparameters-and-how-to-tune-the-hyperparameters-in-a-deep-neural-network-d0604917584a)
+- [Discussão sobre funções de ativação](https://www.analyticsvidhya.com/blog/2020/01/fundamentals-deep-learning-activation-functions-when-to-use-them/)
+- [Explicação de batch normalization](https://www.learnopencv.com/batch-normalization-in-deep-networks/)
+- [Explicação sobre Gradiente Descendente](https://medium.com/@abhinav.mahapatra10/beginner-ml-basics-gradient-descent-31cc0732676f)
 - [Explicação sobre taxa de aprendizado](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/)
 - [Tutorial de taxa de aprendizado](https://machinelearningmastery.com/learning-rate-for-deep-learning-neural-networks/)
-- [Discussão sobre funções de ativação](https://www.analyticsvidhya.com/blog/2020/01/fundamentals-deep-learning-activation-functions-when-to-use-them/)
-- [Discussão sobre fine tuning](https://flyyufelix.github.io/2016/10/03/fine-tuning-in-keras-part1.html)
-- [Explicação de batch normalization](https://www.learnopencv.com/batch-normalization-in-deep-networks/)
-- [Regressão x Classificação](https://www.geeksforgeeks.org/regression-classification-supervised-machine-learning/)
-- [Explicação sobre Gradiente Descendente](https://medium.com/@abhinav.mahapatra10/beginner-ml-basics-gradient-descent-31cc0732676f)
 - [Explicação sobre momentum](https://medium.com/@abhinav.mahapatra10/ml-advanced-momentum-in-machine-learning-what-is-nesterov-momentum-ad37ce1935fc)
 - [Dicas de performance para Deep Learning](https://machinelearningmastery.com/improve-deep-learning-performance/)
+
+&nbsp;
+
+- [Regressão x Classificação](https://www.geeksforgeeks.org/regression-classification-supervised-machine-learning/)
+
+&nbsp;
+
+- [Discussão sobre fine tuning](https://flyyufelix.github.io/2016/10/03/fine-tuning-in-keras-part1.html)
 
 &nbsp;
 
