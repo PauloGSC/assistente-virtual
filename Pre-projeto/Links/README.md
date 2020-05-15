@@ -20,6 +20,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Explicação resumida da divisão de datasets](https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7)
 - [Lecture sobre datasets e classificadores (o começo é útil)](http://cseweb.ucsd.edu/~elkan/250Bwinter2012/classifiereval.pdf)
 - [Artigo sobre data augmentation e pre-processing](https://blog.roboflow.ai/why-preprocess-augment/)
+
 &nbsp;
 
 - [Discussão sobre hiperparâmetros](https://towardsdatascience.com/what-are-hyperparameters-and-how-to-tune-the-hyperparameters-in-a-deep-neural-network-d0604917584a)
