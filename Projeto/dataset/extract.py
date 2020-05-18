@@ -3,7 +3,7 @@
 # este script utiliza o programa ffmpeg, eh necessario te-lo instalado para funcionar
 
 # para o script funcionar, a estrutura de pastas deve ser a seguinte:
-# - frames (pasta que guardara os frames extraidos)
+# - frames (pasta para guardar os frames extraidos)
 # - videos (pasta com os videos)
 # extract.py (este arquivo)
 
@@ -28,9 +28,10 @@ start = 2
 rate = 2
 
 # script de extracao das frames
-# os frames serao extraidos para a pasta "frames", com o nome de cada frame sendo nome_do_video+numero_do_frame
+# os frames serao extraidos para a pasta "frames", com o nome de cada frame sendo nome_do_video-numero_do_frame
 
 extFrame = ".png"
+
 for v in vids:
 	pref = v[:v.find(".")]
 	comm = "ffmpeg -i videos/{} -ss {} -r {} frames/{}-%03d{}".format(v, start, rate, pref, extFrame)
