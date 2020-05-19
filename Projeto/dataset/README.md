@@ -6,7 +6,7 @@
 |:-------:|:-----:|:---------:|
 | Caixas  |   100 |         0 |
 | Xícaras |   100 |         0 |
-| Carros  |   100 |        20 |
+| Carros  |   100 |        40 |
 
 ### Forma de coleta
 
