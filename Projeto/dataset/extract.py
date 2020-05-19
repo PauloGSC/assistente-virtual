@@ -1,65 +1,86 @@
-# script para extrair frames de um ou mais videos-fonte
-
-# este script utiliza o programa ffmpeg, eh necessario te-lo instalado para funcionar
-
-# para o script funcionar, a estrutura de pastas deve ser a seguinte:
-# - frames (pasta para guardar os frames extraidos)
-# - videos (pasta com os videos)
-# extract.py (este arquivo)
-
+import argparse
 import os
+
+# definicao dos parametros da linha de comando
+
+parser = argparse.ArgumentParser(description="""
+	Script para extrair frames de um ou mais vídeos-fonte.
+
+	Este script utiliza o programa 'ffmpeg', é necessario tê-lo instalado para funcionar.""",
+	formatter_class=argparse.RawDescriptionHelpFormatter
+)
+
+parser.add_argument("-pv", default="videos",
+					help="Caminho do diretório dos vídeos.\
+						  Default='videos'")
+parser.add_argument("-ev", default="mp4",
+					help="Extensão dos vídeos.\
+						  Default=mp4")
+parser.add_argument("-p", type=int,
+					help="Primeiro vídeo a ser analisado.\
+						  Default= a partir do começo.")
+parser.add_argument("-u", type=int,
+					help="Último vídeo a ser analisado.\
+						  Default= até o último.")
+parser.add_argument("-ss", type=float, default=2.0,
+					help="Offset do início do vídeo.\
+						  Default=2.0")
+parser.add_argument("-r", type=float, default=2.0,
+					help="Frames a serem extraídos por segundo.\
+						  Default=2.0")
+parser.add_argument("-ef", default="png",
+					help="Extensão dos frames extraídos.\
+						  Default=png")
+parser.add_argument("-pf", default="frames",
+					help="Caminho do diretório dos frames.\
+						  Default='frames'")
+
+# coleta parametros da linha de comando
+
+args = parser.parse_args()
 
 # lista de videos a serem analisados
 
-extVideo = ".mp4"
-
-vids2 = os.listdir("videos")
+vids2 = os.listdir(args.pv)
 vids2.sort()
 vids = []
 for v in vids2:
-	if v.endswith(extVideo):
+	if v.endswith("." + args.ev):
 		vids.append(v)
 
-# parametros para a extracao
-
-# offset do inicio da extracao, em segundos
-start = 2
-# numero de frames a serem extraidos por segundo
-rate = 2
-
 # script de extracao das frames
-# os frames serao extraidos para a pasta "frames", com o nome de cada frame sendo nome_do_video-numero_do_frame
-
-extFrame = ".png"
 
 for v in vids:
-	pref = v[:v.find(".")]
-	comm = "ffmpeg -i videos/{} -ss {} -r {} frames/{}-%03d{}".format(v, start, rate, pref, extFrame)
-	os.system(comm)
+	num = int(v[v.find("-")+1:v.find(".")])
+	if (args.p is None or args.p <= num) and (args.u is None or num <= args.u):
+		pref = v[:v.find(".")]
+		com = "ffmpeg -i {}/{} -ss {} -r {} {}/{}-%03d.{}"\
+			  .format(args.pv, v, args.ss, args.r, args.pf, pref, args.ef)
+		os.system(com)
 
 # geralmente os dois primeiros frames do video sao muito parecidos
 # assim, exclui-se o primeiro frame de cada video
 
-os.chdir("frames")
+os.chdir(args.pf)
 
-files = os.listdir()
-files.sort()
+arqs = os.listdir()
+arqs.sort()
 
 toDel = []
-for f in files:
-	if f.endswith("-001" + extFrame):
+for f in arqs:
+	if f.endswith("-001." + args.ef):
 		toDel.append(f)
 for f in toDel:
 	os.remove(f)
 
 # renomear os arquivos para compensar a falta dos arquivos 001
 
-files = os.listdir()
-files.sort()
+arqs = os.listdir()
+arqs.sort()
 
-for f in files:
-	num = f[f.rfind("-")+1:f.rfind(".")]
-	rep = num + extFrame
-	pred = str(int(num)-1).zfill(3) + extFrame
+for f in arqs:
+	num = int(f[f.rfind("-")+1:f.rfind(".")])
+	rep = f[f.rfind("-")+1:]
+	pred = str(num-1).zfill(3) + "." + args.ef
 	new = f.replace(rep, pred)
 	os.rename(f, new)
