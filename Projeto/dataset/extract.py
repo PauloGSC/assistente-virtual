@@ -12,28 +12,28 @@ parser = argparse.ArgumentParser(description="""
 
 parser.add_argument("-pv", default="videos",
 					help="Caminho do diretório dos vídeos.\
-						  Default='videos'")
+						  (default='videos')")
 parser.add_argument("-ev", default="mp4",
 					help="Extensão dos vídeos.\
-						  Default=mp4")
+						  (default=mp4)")
 parser.add_argument("-p", type=int,
 					help="Primeiro vídeo a ser analisado.\
-						  Default= a partir do começo.")
+						  (default= a partir do começo)")
 parser.add_argument("-u", type=int,
 					help="Último vídeo a ser analisado.\
-						  Default= até o último.")
+						  (default= até o último)")
 parser.add_argument("-ss", type=float, default=2.0,
 					help="Offset do início do vídeo.\
-						  Default=2.0")
+						  (default=2.0)")
 parser.add_argument("-r", type=float, default=2.0,
 					help="Frames a serem extraídos por segundo.\
-						  Default=2.0")
+						  (default=2.0)")
 parser.add_argument("-ef", default="png",
 					help="Extensão dos frames extraídos.\
-						  Default=png")
+						  (default=png)")
 parser.add_argument("-pf", default="frames",
 					help="Caminho do diretório dos frames.\
-						  Default='frames'")
+						  (default='frames')")
 
 # coleta parametros da linha de comando
 
