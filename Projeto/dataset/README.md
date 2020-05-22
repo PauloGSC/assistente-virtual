@@ -4,9 +4,9 @@
 
 | Objeto  | Total | Coletados |
 |:-------:|:-----:|:---------:|
-| Caixas  |   100 |         0 |
+| Caixas  |   100 |        40 |
 | Xícaras |   100 |         0 |
-| Carros  |   100 |        60 |
+| Carros  |   100 |       100 |
 
 ### Forma de coleta
 
