@@ -25,11 +25,10 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 - [Discussão sobre hiperparâmetros](https://towardsdatascience.com/what-are-hyperparameters-and-how-to-tune-the-hyperparameters-in-a-deep-neural-network-d0604917584a)
 - [Discussão sobre funções de ativação](https://www.analyticsvidhya.com/blog/2020/01/fundamentals-deep-learning-activation-functions-when-to-use-them/)
-- [Explicação de batch normalization](https://www.learnopencv.com/batch-normalization-in-deep-networks/)
-- [Explicação sobre Gradiente Descendente](https://medium.com/@abhinav.mahapatra10/beginner-ml-basics-gradient-descent-31cc0732676f)
+- [Explicação sobre gradiente descendente (excelente)](https://medium.com/@abhinav.mahapatra10/beginner-ml-basics-gradient-descent-31cc0732676f)
+- [Explicação sobre momentum (muito boa)](https://medium.com/@abhinav.mahapatra10/ml-advanced-momentum-in-machine-learning-what-is-nesterov-momentum-ad37ce1935fc)
 - [Explicação sobre taxa de aprendizado](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/)
 - [Tutorial de taxa de aprendizado](https://machinelearningmastery.com/learning-rate-for-deep-learning-neural-networks/)
-- [Explicação sobre momentum](https://medium.com/@abhinav.mahapatra10/ml-advanced-momentum-in-machine-learning-what-is-nesterov-momentum-ad37ce1935fc)
 - [Dicas de performance para Deep Learning](https://machinelearningmastery.com/improve-deep-learning-performance/)
 
 &nbsp;
@@ -38,6 +37,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 &nbsp;
 
+- [Explicação de batch normalization](https://www.learnopencv.com/batch-normalization-in-deep-networks/)
 - [Discussão sobre fine tuning](https://flyyufelix.github.io/2016/10/03/fine-tuning-in-keras-part1.html)
 
 &nbsp;
@@ -52,9 +52,9 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 - [Website de PyTorch](https://pytorch.org/)
 - [Tutoriais de PyTorch](https://www.learnopencv.com/learn-pytorch/)
-- [Artigo sobre Transfer Learning com PyTorch](https://towardsdatascience.com/transfer-learning-picking-the-right-pre-trained-model-for-your-problem-bac69b488d16)
+- [Artigo sobre transfer learning com PyTorch](https://towardsdatascience.com/transfer-learning-picking-the-right-pre-trained-model-for-your-problem-bac69b488d16)
 - [Finetuning em PyTorch](https://discuss.pytorch.org/t/how-to-perform-finetuning-in-pytorch/419)
-- [Canal de Deep Learning com PyTorch](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)
+- [Canal de deep learning com PyTorch](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)
 
 &nbsp;
 
