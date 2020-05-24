@@ -29,6 +29,8 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Explicação sobre momentum (muito boa)](https://medium.com/@abhinav.mahapatra10/ml-advanced-momentum-in-machine-learning-what-is-nesterov-momentum-ad37ce1935fc)
 - [Explicação sobre taxa de aprendizado](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/)
 - [Tutorial de taxa de aprendizado](https://machinelearningmastery.com/learning-rate-for-deep-learning-neural-networks/)
+- [Explicação sobre funções de perda](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/)
+- [Tutorial de funções de perda](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)
 - [Dicas de performance para Deep Learning](https://machinelearningmastery.com/improve-deep-learning-performance/)
 
 &nbsp;
