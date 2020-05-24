@@ -10,3 +10,4 @@
 |      | 04 | - | Planejamento geral do projeto |
 |      | 05 | 1 | Análise do YOLOv4 |
 |      |    | 2 | Definição da tarefa e dos objetos a serem usados |
+|      |    | 3 | Coleta do dataset p. 1 |
