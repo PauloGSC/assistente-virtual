@@ -5,7 +5,7 @@
 | Objeto    | Total | Coletados |
 |:---------:|:-----:|:---------:|
 | Caixas    |   100 |        80 |
-| Xícaras   |   100 |        40 |
+| Xícaras   |   100 |        60 |
 | Carros    |   100 |       100 |
 | Múltiplos |   100 |         0 |
 
