@@ -27,4 +27,4 @@
 
 ### Extração das imagens
 
-- Para cada vídeo, são extraídas __2 imagens por segundo__ (para evitar tanta repetição entre os frames)
+- Para cada vídeo, são extraídas __1,5 imagens por segundo__ (para evitar tanta repetição entre os frames)
