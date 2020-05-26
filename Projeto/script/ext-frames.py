@@ -10,7 +10,7 @@ parser = argparse.ArgumentParser(description="""
 	formatter_class=argparse.RawDescriptionHelpFormatter
 )
 
-parser.add_argument("-pv", default="videos",
+parser.add_argument("pv", default="videos",
 					help="Caminho do diretório dos vídeos.\
 						  (default='videos')")
 parser.add_argument("-ev", default="mp4",
@@ -31,7 +31,7 @@ parser.add_argument("-r", type=float, default=2.0,
 parser.add_argument("-ef", default="png",
 					help="Extensão dos frames extraídos.\
 						  (default=png)")
-parser.add_argument("-pf", default="frames",
+parser.add_argument("pf", default="frames",
 					help="Caminho do diretório dos frames.\
 						  (default='frames')")
 
@@ -41,12 +41,8 @@ args = parser.parse_args()
 
 # lista de videos a serem analisados
 
-vids2 = os.listdir(args.pv)
-vids2.sort()
-vids = []
-for v in vids2:
-	if v.endswith("." + args.ev):
-		vids.append(v)
+vids = [v for v in os.listdir(args.pv) if v.endswith("."+args.ev]
+vids.sort()
 
 # script de extracao das frames
 
