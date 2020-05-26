@@ -10,7 +10,7 @@ random.seed()
 obj = ["caixa", "xicara", "carro"]
 cnt = {obj[0]:0, obj[1]:0, obj[2]:0, "NULO":0}
 
-with open("t.txt", "w") as t:
+with open("mult.txt", "w") as t:
 	for f in range(1, 101):
 		n = random.randint(2,3)
 		res = [o for o in random.sample(obj, n)]
@@ -22,8 +22,7 @@ with open("t.txt", "w") as t:
 		line += res[1].center(8) + " | "
 		line += res[2].center(8)
 		t.write(line + "\n")
-		
+
 	t.write("-"*34 + "\n")
 	for k, v in cnt.items():
 		t.write(str(k) + " = " + str(v) + "\n")
-		

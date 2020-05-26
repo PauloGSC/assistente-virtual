@@ -6,7 +6,7 @@ import os
 parser = argparse.ArgumentParser(description="""
 	Script para extrair frames de um ou mais vídeos-fonte.
 
-	Este script utiliza o programa 'ffmpeg', é necessario tê-lo instalado para funcionar.""",
+	Este script utiliza o programa 'ffmpeg'; para instalá-lo, execute 'sudo apt install ffmpeg'.""",
 	formatter_class=argparse.RawDescriptionHelpFormatter
 )
 
@@ -25,7 +25,7 @@ parser.add_argument("-u", type=int,
 parser.add_argument("-ss", type=float, default=2.0,
 					help="Offset do início do vídeo.\
 						  (default=2.0)")
-parser.add_argument("-r", type=float, default=2.0,
+parser.add_argument("-r", type=float, default=1.5,
 					help="Frames a serem extraídos por segundo.\
 						  (default=2.0)")
 parser.add_argument("-ef", default="png",
@@ -41,7 +41,7 @@ args = parser.parse_args()
 
 # lista de videos a serem analisados
 
-vids = [v for v in os.listdir(args.pv) if v.endswith("."+args.ev]
+vids = [v for v in os.listdir(args.pv) if v.endswith("."+args.ev)]
 vids.sort()
 
 # script de extracao das frames
