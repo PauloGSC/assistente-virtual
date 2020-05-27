@@ -4,16 +4,16 @@
 
 | Objeto    | Total | Coletados |
 |:---------:|:-----:|:---------:|
-| Caixas    |   100 |        80 |
-| Xícaras   |   100 |        80 |
+| Caixas    |   104 |       104 |
+| Xícaras   |   100 |       100 |
 | Carros    |   100 |       100 |
 | Múltiplos |   100 |         0 |
 
 ### Visão geral
 
 - Serão coletadas imagens de objetos de 3 classes (caixas, xícaras e carrinhos de brinquedo)
-- Cada classe possui 100 amostras distintas entre si
-- Adicionalmente, 100 cenários contendo múltiplos (2 ou 3) objetos também serão registrados
+- Cada classe possui ~100 amostras distintas entre si
+- Adicionalmente, ~100 cenários contendo múltiplos (2 ou 3) objetos também serão registrados
 
 ### Forma de coleta
 
