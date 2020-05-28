@@ -44,10 +44,9 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 &nbsp;
 
-- [A Beginner's Guide To Understanding Convolutional Neural Networks](https://adeshpande3.github.io/A-Beginner%27s-Guide-To-Understanding-Convolutional-Neural-Networks/)
-- [Basic Overview of Convolutional Neural Network (CNN)](https://medium.com/dataseries/basic-overview-of-convolutional-neural-network-cnn-4fcc7dbb4f17)
-- [Student Notes: Convolutional Neural Networks (CNN) Introduction](https://indoml.com/2018/03/07/student-notes-convolutional-neural-networks-cnn-introduction/)
-- [Convolutional Neural Nets in PyTorch](https://algorithmia.com/blog/convolutional-neural-nets-in-pytorch)
+- Guia de CNNs para iniciantes: [1](https://adeshpande3.github.io/A-Beginner%27s-Guide-To-Understanding-Convolutional-Neural-Networks/), [2](https://adeshpande3.github.io/adeshpande3.github.io/A-Beginner's-Guide-To-Understanding-Convolutional-Neural-Networks-Part-2/) e [3](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
+- [Overview sobre CNN](https://medium.com/dataseries/basic-overview-of-convolutional-neural-network-cnn-4fcc7dbb4f17)
+- [Student Notes: Convolutional Neural Networks Introduction](https://indoml.com/2018/03/07/student-notes-convolutional-neural-networks-cnn-introduction/)
 - [Slides de CNN de Stanford](http://cs231n.stanford.edu/slides/) e [Complemento desses slides](https://cs231n.github.io/)
 
 &nbsp;
@@ -57,6 +56,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Artigo sobre transfer learning com PyTorch](https://towardsdatascience.com/transfer-learning-picking-the-right-pre-trained-model-for-your-problem-bac69b488d16)
 - [Finetuning em PyTorch](https://discuss.pytorch.org/t/how-to-perform-finetuning-in-pytorch/419)
 - [Canal de deep learning com PyTorch](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)
+- [Convolutional Neural Nets in PyTorch](https://algorithmia.com/blog/convolutional-neural-nets-in-pytorch)
 
 &nbsp;
 
