@@ -5,6 +5,7 @@ import os
 
 psr = argparse.ArgumentParser(description="""
 	  Script para remover todas as trilhas de áudio de um ou mais vídeos.
+	  
 	  Este script utiliza o programa 'ffmpeg'; para instalá-lo, execute 'sudo apt install ffmpeg'.""",
 	  formatter_class=argparse.RawDescriptionHelpFormatter
 )

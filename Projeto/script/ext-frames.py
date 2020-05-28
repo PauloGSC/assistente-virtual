@@ -27,7 +27,7 @@ parser.add_argument("-ss", type=float, default=2.0,
 						  (default=2.0)")
 parser.add_argument("-r", type=float, default=1.5,
 					help="Frames a serem extraídos por segundo.\
-						  (default=2.0)")
+						  (default=1.5)")
 parser.add_argument("-ef", default="png",
 					help="Extensão dos frames extraídos.\
 						  (default=png)")
