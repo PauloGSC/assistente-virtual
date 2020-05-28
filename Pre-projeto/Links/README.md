@@ -72,15 +72,19 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 &nbsp;
 
+- [Tutorial detalhado de Faster-RCNN com PyTorch](https://medium.com/@fractaldle/guide-to-build-faster-rcnn-in-pytorch-95b10c273439)
+
+&nbsp;
+
 - [Apresentação do YOLO pelo seu criador](https://www.youtube.com/watch?v=NM6lrxy0bxs)
 - [Guia de YOLOv1, v2, v3 e v4](https://robocademy.com/2020/05/01/a-gentle-introduction-to-yolo-v4-for-object-detection-in-ubuntu-20-04/)
-- [Tutorial detalhado de Faster-RCNN com PyTorch](https://medium.com/@fractaldle/guide-to-build-faster-rcnn-in-pytorch-95b10c273439)
 - [Artigo sobre YOLOv3 com PyTorch](https://michhar.github.io/learning-from-learning-yolov3/)
 - [Guia de YOLO](https://hackernoon.com/understanding-yolo-f5a74bbc7967)
 - [Tutoriais de YOLO no PyTorch](https://blog.paperspace.com/tag/series-yolo/)
 - [Explicação sobre YOLO](https://medium.com/@jonathan_hui/real-time-object-detection-with-yolo-yolov2-28b1b93e2088)
 - [Outro guia para treinar YOLO com seu próprio dataset](https://medium.com/@anirudh.s.chakravarthy/training-yolov3-on-your-custom-dataset-19a1abbdaf09)
 - [Artigo de YOLOv3 com OpenCV](https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/)
+- [Artigo sobre preparação de dataset para treinamento com YOLO](https://www.arunponnusamy.com/preparing-custom-dataset-for-training-yolo-object-detector.html)
 
 &nbsp;
 
