@@ -12,14 +12,17 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Slides de DL de Stanford](https://cs230.stanford.edu/winter2020/)
 - [Cheatsheets de ML e DL de Stanford](https://stanford.edu/~shervine/teaching/)
 - [Site de Deep Learning com OpenCV](https://www.learnopencv.com/)
-- Slides de Deep Learning: [1](https://www.dropbox.com/s/7udotem1daz265x/AAAI2017-1-0205c.pdf?dl=0), [2](https://www.dropbox.com/s/qfz34ba3ftuli6b/AAAI2017-2-0203.pdf), [3](https://www.dropbox.com/s/6sbt9jmrwg414c8/AAAI2017-3-0331.pdf)
+- Slides de Deep Learning: [1](https://www.dropbox.com/s/7udotem1daz265x/AAAI2017-1-0205c.pdf?dl=0), [2](https://www.dropbox.com/s/qfz34ba3ftuli6b/AAAI2017-2-0203.pdf) e [3](https://www.dropbox.com/s/6sbt9jmrwg414c8/AAAI2017-3-0331.pdf)
 
 &nbsp;
 
 - [Explicação detalhada da divisão de datasets](https://machinelearningmastery.com/difference-test-validation-datasets/)
 - [Explicação resumida da divisão de datasets](https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7)
 - [Lecture sobre datasets e classificadores (o começo é útil)](http://cseweb.ucsd.edu/~elkan/250Bwinter2012/classifiereval.pdf)
-- [Artigo sobre data augmentation e pre-processing](https://blog.roboflow.ai/why-preprocess-augment/)
+
+&nbsp;
+
+- [Blog excelente sobre Visão Computacional e Datasets](https://blog.roboflow.ai)
 
 &nbsp;
 
@@ -71,7 +74,6 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 - [Apresentação do YOLO pelo seu criador](https://www.youtube.com/watch?v=NM6lrxy0bxs)
 - [Guia de YOLOv1, v2, v3 e v4](https://robocademy.com/2020/05/01/a-gentle-introduction-to-yolo-v4-for-object-detection-in-ubuntu-20-04/)
-- [Guia para treinar YOLOv3 com dataset próprio](https://blog.roboflow.ai/training-a-yolov3-object-detection-model-with-a-custom-dataset/)
 - [Tutorial detalhado de Faster-RCNN com PyTorch](https://medium.com/@fractaldle/guide-to-build-faster-rcnn-in-pytorch-95b10c273439)
 - [Artigo sobre YOLOv3 com PyTorch](https://michhar.github.io/learning-from-learning-yolov3/)
 - [Guia de YOLO](https://hackernoon.com/understanding-yolo-f5a74bbc7967)
