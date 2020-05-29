@@ -5,23 +5,17 @@ import os
 
 psr = argparse.ArgumentParser("""
 	Script para mover vídeos de um local para outro.
-	Os vídeos tambem sao renomeados, de acordo com os parâmetros passados.
-	""",
+	Os vídeos tambem sao renomeados, de acordo com os parâmetros passados. """,
 	formatter_class=argparse.RawDescriptionHelpFormatter
 )
 
-psr.add_argument("pv",
-				 help="Diretório com os vídeos.")
-psr.add_argument("pd",
-				 help="Diretório destino dos vídeos.")
-psr.add_argument("px",
-				 help="Prefixo para renomear os vídeos.")
+psr.add_argument("pv", help="Diretório com os vídeos.")
+psr.add_argument("pd", help="Diretório destino dos vídeos.")
+psr.add_argument("px",  help="Prefixo para renomear os vídeos.")
 psr.add_argument("-i", type=int, default=1,
-				 help="Início da numeração dos vídeos. \
-				 	   (default=1).")
+				 help="Início da numeração dos vídeos. (default=1).")
 psr.add_argument("-ext", default="mp4",
-				 help="Extensão dos vídeos. \
-				 	   (default=mp4).")
+				 help="Extensão dos vídeos. (default=mp4).")
 
 args = psr.parse_args()
 

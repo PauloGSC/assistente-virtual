@@ -4,19 +4,13 @@ import os
 # usando o argparser para a linha de comando
 
 psr = argparse.ArgumentParser(description="""
-	  Script para remover todas as trilhas de áudio de um ou mais vídeos.
-	  
-	  Este script utiliza o programa 'ffmpeg'; para instalá-lo, execute 'sudo apt install ffmpeg'.""",
+	  Script para remover todas as trilhas de áudio de um ou mais vídeos.""",
 	  formatter_class=argparse.RawDescriptionHelpFormatter
 )
 
-psr.add_argument("vca",
-				help="Caminho do diretório com os vídeos.")
-psr.add_argument("vsa",
-				help="Caminho para guardar os vídeos sem áudio.")
-psr.add_argument("-ev", default="mp4",
-				help="Extensão dos vídeos.\
-					  (default=mp4)")
+psr.add_argument("vca", help="Caminho do diretório com os vídeos.")
+psr.add_argument("vsa", help="Caminho para guardar os vídeos sem áudio.")
+psr.add_argument("-ev", default="mp4", help="Extensão dos vídeos. (default=mp4)")
 
 args = psr.parse_args()
 
