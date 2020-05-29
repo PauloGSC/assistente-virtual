@@ -4,34 +4,18 @@ import os
 # definicao dos parametros da linha de comando
 
 parser = argparse.ArgumentParser(description="""
-	Script para extrair frames de um ou mais vídeos-fonte.
-
-	Este script utiliza o programa 'ffmpeg'; para instalá-lo, execute 'sudo apt install ffmpeg'.""",
+	Script para extrair frames de um ou mais vídeos-fonte.""",
 	formatter_class=argparse.RawDescriptionHelpFormatter
 )
 
-parser.add_argument("pv",
-					help="Caminho do diretório dos vídeos.")
-parser.add_argument("-ev", default="mp4",
-					help="Extensão dos vídeos.\
-						  (default=mp4)")
-parser.add_argument("-p", type=int,
-					help="Primeiro vídeo a ser analisado.\
-						  (default= a partir do começo)")
-parser.add_argument("-u", type=int,
-					help="Último vídeo a ser analisado.\
-						  (default= até o último)")
-parser.add_argument("-ss", type=float, default=2.0,
-					help="Offset do início do vídeo.\
-						  (default=2.0)")
-parser.add_argument("-r", type=float, default=1.5,
-					help="Frames a serem extraídos por segundo.\
-						  (default=1.5)")
-parser.add_argument("-ef", default="png",
-					help="Extensão dos frames extraídos.\
-						  (default=png)")
-parser.add_argument("pf",
-					help="Caminho do diretório dos frames.")
+parser.add_argument("pv", help="Caminho do diretório dos vídeos.")
+parser.add_argument("-ev", default="mp4", help="Extensão dos vídeos. (default=mp4)")
+parser.add_argument("-p", type=int, help="Primeiro vídeo a ser analisado. (default= a partir do começo)")
+parser.add_argument("-u", type=int, help="Último vídeo a ser analisado. (default= até o último)")
+parser.add_argument("-ss", type=float, default=2.0, help="Offset do início do vídeo. (default=2.0)")
+parser.add_argument("-r", type=float, default=1.5, help="Frames a serem extraídos por segundo. (default=1.5)")
+parser.add_argument("-ef", default="jpg", help="Extensão dos frames extraídos. (default=jpg)")
+parser.add_argument("pf", help="Caminho do diretório dos frames.")
 
 # coleta parametros da linha de comando
 
