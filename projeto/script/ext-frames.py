@@ -10,11 +10,12 @@ parser = argparse.ArgumentParser(description="""
 
 parser.add_argument("pv", help="Caminho do diretório dos vídeos.")
 parser.add_argument("-ev", default="mp4", help="Extensão dos vídeos. (default=mp4)")
-parser.add_argument("-p", type=int, help="Primeiro vídeo a ser analisado. (default= a partir do começo)")
-parser.add_argument("-u", type=int, help="Último vídeo a ser analisado. (default= até o último)")
+parser.add_argument("-p", type=int, help="Primeiro vídeo a ser analisado.")
+parser.add_argument("-u", type=int, help="Último vídeo a ser analisado.")
 parser.add_argument("-ss", type=float, default=2.0, help="Offset do início do vídeo. (default=2.0)")
 parser.add_argument("-r", type=float, default=1.5, help="Frames a serem extraídos por segundo. (default=1.5)")
 parser.add_argument("-ef", default="jpg", help="Extensão dos frames extraídos. (default=jpg)")
+parser.add_argument("-q", default=1, help="Qualidade dos frames extraídos. (default=1)")
 parser.add_argument("pf", help="Caminho do diretório dos frames.")
 
 # coleta parametros da linha de comando
@@ -32,8 +33,9 @@ for v in vids:
 	num = int(v[v.find("-")+1:v.find(".")])
 	if (args.p is None or args.p <= num) and (args.u is None or num <= args.u):
 		pref = v[:v.find(".")]
-		com = "ffmpeg -i {}/{} -ss {} -r {} {}/{}-%03d.{}"\
-			  .format(args.pv, v, args.ss, args.r, args.pf, pref, args.ef)
+		com = "ffmpeg -i {}/{} -ss {} -r {} -q:v {} {}/{}-%03d.{}"\
+			  .format(args.pv, v, args.ss, args.r,
+			  		  args.q, args.pf, pref, args.ef)
 		os.system(com)
 
 # geralmente os dois primeiros frames do video sao muito parecidos
