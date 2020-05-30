@@ -7,7 +7,12 @@
 | Caixas    |   104 |       104 |
 | Xícaras   |   100 |       100 |
 | Carros    |   100 |       100 |
-| Múltiplos |   100 |         0 |
+| Múltiplos |   100 |        37 |
+
+### Versionamento
+
+- Versão 1: vídeos inalterados
+- Versão 2: imagens retiradas dos vídeos da versão 1, refinadas e devidamente rotuladas
 
 ### Visão geral
 
