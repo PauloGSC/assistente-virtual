@@ -1,6 +1,8 @@
 import argparse
 import cv2 as cv
+from glob import glob
 import os
+from os import path
 from random import seed, randrange as rre
 from screeninfo import get_monitors
 
@@ -8,7 +10,7 @@ from screeninfo import get_monitors
 
 seed()
 
-# extraindo os argumentos da linha de comando
+# obtendo os argumentos da linha de comando
 
 psr = argparse.ArgumentParser(description="""
 	  Script para visualizar os rótulos de uma imagem.
@@ -18,26 +20,32 @@ psr = argparse.ArgumentParser(description="""
 	  formatter_class=argparse.RawDescriptionHelpFormatter
 )
 
-psr.add_argument("img", help="Diretório com as imagens.")
+psr.add_argument("pi", help="Diretório com as imagens.")
 psr.add_argument("cls", help="Arquivo com as classes.")
-psr.add_argument("-lbl", default=None, help="Diretório com os rótulos.")
-psr.add_argument("-exi", default="jpg", help="Extensão das imagens (default=jpg).")
+psr.add_argument("-pl", default=None, help="Diretório com os rótulos.")
+psr.add_argument("-ei", default="jpg", help="Extensão das imagens (default=jpg).")
 
 args = psr.parse_args()
-img = args.img
-lbl = img if args.lbl is None else args.lbl
-img = img if img.endswith("/") else img+"/"
-lbl = lbl if lbl.endswith("/") else lbl+"/"
 
-# obtendo os nomes dos arquivos de imagens
+pi = args.pi
+pl = pi if args.pl is None else args.pl
 
-imgs = [f for f in os.listdir(img) if f.endswith("."+args.exi)]
+# normalizando paths
+
+pi = path.abspath(pi)
+cls = path.abspath(args.cls)
+pl = path.abspath(pl)
+
+# obtendo a lista de imagens
+
+os.chdir(pi)
+imgs = glob("*.{}".format(args.ei))
 imgs.sort()
 
 # obtendo as classes
 
-with open(args.cls) as c:
-	cls = c.read().splitlines()
+with open(cls) as c:
+	classes = c.read().splitlines()
 
 # obtendo tamanho máximo da janela
 
@@ -45,10 +53,9 @@ fat = 0.75
 W = int(get_monitors()[0].width * fat)
 H = int(get_monitors()[0].height * fat)
 
-# controlador da 'apresentação de slides'
+# controlando o 'slideshow'
 
 pos = 0
-
 while True:
 
 	# imagem atual e label dessa imagem
@@ -56,15 +63,15 @@ while True:
 	curi = imgs[pos]
 	curl = curi[:curi.rfind(".")] + ".txt"
 
-	pci = img + curi
-	pcl = lbl + curl
+	pci = path.join(pi, curi)
+	pcl = path.join(pl, curl)
 
-	i = cv.imread(pci)
+	img = cv.imread(pci)
 
 	# obtendo dimensões da imagem
 
-	w = i.shape[1]
-	h = i.shape[0]
+	w = img.shape[1]
+	h = img.shape[0]
 
 	with open(pcl) as l:
 		for line in l.read().splitlines():
@@ -72,8 +79,7 @@ while True:
 			# extraindo as informações de cada 'bounding box' da label
 
 			lab = [n for n in line.split()]
-			label = dict(cls=int(lab[0]),
-						 x=float(lab[1]), y=float(lab[2]),
+			label = dict(cls=int(lab[0]), x=float(lab[1]), y=float(lab[2]),
 						 w=float(lab[3]), h=float(lab[4]))
 
 			# desnormalizando as coordenadas e medidas
@@ -93,18 +99,19 @@ while True:
 			# desenhando a 'bounding box'
 
 			bgr = (rre(256), rre(256), rre(256))
-			cv.rectangle(i, tl, br, bgr, 3)
+			cv.rectangle(img, tl, br, bgr, 3)
 
 			# desenhando o nome da classe relativa à 'bounding box'
 
-			txt = cls[label["cls"]]
-			corner = (tl[0]+5, tl[1]+30)
+			txt = classes[label["cls"]]
+			corner = (tl[0]+5, tl[1]+22)
 			font = cv.FONT_HERSHEY_PLAIN
-			cv.putText(i, txt, corner, font, 2.2, bgr, 4, 16)
+			cv.putText(img, txt, corner, font, 1.5, bgr, 2, 16)
 
 	# ajustando tamanho da janela
 
 	cv.namedWindow(curi, cv.WINDOW_KEEPRATIO)
+
 	ww = w
 	wh = h
 	if w > W and h <= H:
@@ -118,7 +125,10 @@ while True:
 			wh = H
 
 	cv.resizeWindow(curi, ww, wh)
-	cv.imshow(curi, i)
+
+	# mostrando a imagem
+
+	cv.imshow(curi, img)
 
 	# verificando a próxima ação do usuário
 
