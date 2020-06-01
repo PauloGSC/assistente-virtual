@@ -22,7 +22,7 @@ psr = argparse.ArgumentParser(description="""
 
 psr.add_argument("pi", help="Diretório com as imagens.")
 psr.add_argument("cls", help="Arquivo com as classes.")
-psr.add_argument("-pl", default=None, help="Diretório com os rótulos.")
+psr.add_argument("-pl", help="Diretório com os rótulos.")
 psr.add_argument("-ei", default="jpg", help="Extensão das imagens (default=jpg).")
 
 args = psr.parse_args()
@@ -32,9 +32,9 @@ pl = pi if args.pl is None else args.pl
 
 # normalizando paths
 
-pi = path.abspath(pi)
-cls = path.abspath(args.cls)
-pl = path.abspath(pl)
+pi = path.abspath(path.expanduser(pi))
+cls = path.abspath(path.expanduser(args.cls))
+pl = path.abspath(path.expanduser(pl))
 
 # obtendo a lista de imagens
 

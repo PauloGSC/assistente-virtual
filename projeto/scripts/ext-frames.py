@@ -10,7 +10,7 @@ psr = argparse.ArgumentParser(description="""
 	Script para extrair frames de um ou mais vídeos-fonte."""
 )
 
-psr.add_argument("pv", help="Caminho do diretório dos vídeos.")
+psr.add_argument("ps", help="Caminho do diretório dos vídeos.")
 psr.add_argument("-ev", default="mp4",
 				 help="Extensão dos vídeos. (default=mp4)")
 psr.add_argument("-p", type=int, help="Primeiro vídeo a ser analisado.")
@@ -23,18 +23,22 @@ psr.add_argument("-ef", default="jpg",
 				 help="Extensão dos frames extraídos. (default=jpg)")
 psr.add_argument("-q", default=1,
 				 help="Qualidade dos frames extraídos. (default=1)")
-psr.add_argument("pf", help="Caminho do diretório dos frames.")
+psr.add_argument("pd", help="Caminho do diretório dos frames.")
 
 args = psr.parse_args()
 
 # normalizando paths
 
-pv = path.abspath(args.pv)
-pf = path.abspath(args.pf)
+ps = path.abspath(path.expanduser(args.ps))
+pd = path.abspath(path.expanduser(args.pd))
+
+# criando diretório-destino, se necessário
+
+if not path.exists(pd): os.makedirs(pd)
 
 # obtendo a lista de vídeos
 
-os.chdir(pv)
+os.chdir(ps)
 vids = glob("*.{}".format(args.ev))
 vids.sort()
 
@@ -43,10 +47,10 @@ vids.sort()
 for v in vids:
 	num = int(v[v.find("-")+1:v.find(".")])
 	if (args.p is None or args.p <= num) and (args.u is None or num <= args.u):
-		p1 = path.join(pv, v)
+		p1 = path.join(ps, v)
 		pref = v[:v.find(".")]
 		fr = "{}-%03d.{}".format(pref, args.ef)
-		p2 = path.join(pf, fr)
+		p2 = path.join(pd, fr)
 		com = "ffmpeg -i {} -ss {} -r {} -q:v {} {}"\
 			  .format(p1, args.s, args.r, args.q, p2)
 		call(com, shell=True)
@@ -56,7 +60,7 @@ for v in vids:
 
 # obtendo frames -001
 
-os.chdir(pf)
+os.chdir(pd)
 rem = glob("*-001.{}".format(args.ef))
 rem.sort()
 for r in rem:

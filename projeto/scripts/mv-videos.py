@@ -11,7 +11,7 @@ psr = argparse.ArgumentParser("""
 	formatter_class=argparse.RawDescriptionHelpFormatter
 )
 
-psr.add_argument("pv", help="Diretório com os vídeos.")
+psr.add_argument("ps", help="Diretório com os vídeos.")
 psr.add_argument("pd", help="Diretório destino dos vídeos.")
 psr.add_argument("pfx",  help="Prefixo para renomear os vídeos.")
 psr.add_argument("-i", type=int, default=1,
@@ -23,12 +23,16 @@ args = psr.parse_args()
 
 # normalizando os paths
 
-pv = path.abspath(args.pv)
-pd = path.abspath(args.pd)
+ps = path.abspath(path.expanduser(args.ps))
+pd = path.abspath(path.expanduser(args.pd))
+
+# criando diretório-destino, se for necessário
+
+if not path.exists(pd): os.makedirs(pd)
 
 # obtendo a lista de vídeos
 
-os.chdir(pv)
+os.chdir(ps)
 vids = glob("*.{}".format(args.ext))
 vids.sort()
 

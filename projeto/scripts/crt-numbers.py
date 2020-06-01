@@ -1,6 +1,7 @@
 import argparse
 import os
 from os import path
+import shutil
 
 # funções utilitárias
 
@@ -13,20 +14,31 @@ getExt = lambda a: a[a.rfind(".")+1:]
 
 psr = argparse.ArgumentParser(description="""
 	Script para corrigir a numeração dos arquivos
-	quando há 'saltos' entre os números (ex.: 1, 2, 4, 5, 6, 9, ...)."""
+	quando há 'saltos' entre os números (ex.: 1, 2, 4, 5, 6, 9, ...).
+	Caso o diretório de destino seja omitido, os arquivos serão renomeados no diretório-fonte.""",
+	formatter_class=argparse.RawDescriptionHelpFormatter
 )
 
-psr.add_argument("p", help="Caminho dos arquivos.")
+psr.add_argument("ps", help="Caminho dos arquivos.")
+psr.add_argument("-pd", help="Caminho para guardar os arquivos corrigidos.")
 
-p = psr.parse_args().p
+args = psr.parse_args()
+
+ps = args.ps
+pd = ps if args.pd is None else args.pd
 
 # normalizando paths
 
-p = path.abspath(p)
+ps = path.abspath(path.expanduser(ps))
+pd = path.abspath(path.expanduser(pd))
+
+# criando diretório-destino, se necessário
+
+if not path.exists(pd): os.makedirs(pd)
 
 # obtendo a lista de arquivos
 
-os.chdir(p)
+os.chdir(ps)
 arqs = os.listdir()
 arqs.sort()
 
@@ -43,15 +55,19 @@ while c < len(arqs):
 	r1 = getn1(a)
 	r2 = getn2(a)
 
-	ren = "{}-{}-{}.{}".format(pfx, str(i1).zfill(3), str(i2).zfill(3), ext)
-	os.rename(a, ren)
+	novo = "{}-{}-{}.{}".format(pfx, str(i1).zfill(3), str(i2).zfill(3), ext)
+	ren = path.join(pd, novo)
+	if path.samefile(ps, pd):
+		os.rename(a, ren)
+	else:
+		shutil.copy2(a, ren)
 
-	if c < len(arqs)-1:
-		prox1 = getn1(arqs[c+1])
+	c += 1
+
+	if c < len(arqs):
+		prox1 = getn1(arqs[c])
 		if prox1 > r1:
 			i1 += 1
 			i2 = 1
 		else:
 			i2 += 1
-
-	c += 1
