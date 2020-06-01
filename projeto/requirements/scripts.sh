@@ -1,4 +1,4 @@
-bash ../../.assets/update.sh
+bash /.assets/update.sh
 
 # biblioteca de matemática com matrizes
 sudo apt install -y python3-numpy

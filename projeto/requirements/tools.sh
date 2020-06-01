@@ -1,4 +1,4 @@
-bash ../../.assets/update.sh
+bash /.assets/update.sh
 
 # programa para rotular imagens
 sudo pip3 install --upgrade labelImg
