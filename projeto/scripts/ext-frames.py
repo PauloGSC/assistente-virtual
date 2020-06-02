@@ -66,7 +66,7 @@ rem.sort()
 for r in rem:
 	os.remove(r)
 
-# renomeando os arquivos para compensar a falta dos arquivos 001
+# renomeando os arquivos para compensar a falta dos arquivos -001
 
 arqs = os.listdir()
 arqs.sort()
