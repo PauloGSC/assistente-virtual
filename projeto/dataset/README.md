@@ -4,19 +4,20 @@
 
 | Objeto    | Total | Coletados |
 |:---------:|:-----:|:---------:|
-| Caixas    |   104 |       104 |
-| Xícaras   |   100 |       100 |
 | Carros    |   100 |       100 |
+| Garrafas  |       |           |
+| Xícaras   |   100 |       100 |
 | Múltiplos |   100 |        37 |
 
 ### Versionamento
 
-- Versão 1: vídeos inalterados
-- Versão 2: imagens retiradas dos vídeos da versão 1, refinadas e devidamente rotuladas
+- No repositório, será mantida somente a versão mais recente e atualizada do dataset
+- As versões anteriores ou obsoletas serão retiradas do repositório e armazenadas no [Kaggle](https://www.kaggle.com)
+-
 
 ### Visão geral
 
-- Serão coletadas imagens de objetos de 3 classes (caixas, xícaras e carrinhos de brinquedo)
+- Serão coletadas imagens de objetos de 3 classes (carrinhos de brinquedo, garrafas e xícaras)
 - Cada classe possui ~100 amostras distintas entre si
 - Adicionalmente, ~100 cenários contendo múltiplos (2 ou 3) objetos também serão registrados
 
@@ -33,3 +34,5 @@
 ### Extração das imagens
 
 - Para cada vídeo, são extraídas __1,5 imagens por segundo__ (para evitar tanta repetição entre os frames)
+
+### Datasets externos

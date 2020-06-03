@@ -12,7 +12,6 @@ Lista de bibliotecas, sites utilitários e outros itens não-essenciais que pode
 &nbsp;
 
 - [Ferramenta para rotular imagens](https://github.com/tzutalin/labelImg)
-- [Ferramenta para rotular imagens, específica para YOLO](https://github.com/AlexeyAB/Yolo_mark)
 
 &nbsp;
 
