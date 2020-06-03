@@ -16,6 +16,7 @@ Lista de datasets de terceiros que podem ser incorporados ao projeto, parcial ou
 - [Dataset de objetos domésticos](http://www.vision.caltech.edu/pmoreels/Datasets/Home_Objects_06/)
 - [Dataset de lixo descartado](http://tacodataset.org/)
 - [Dataset com algumas garrafas](http://www.slipguru.unige.it/Data/glassense_vision/)
+- [Dataset de garrafas plásticas](https://www.kaggle.com/deadskull7/cola-bottle-identification)
 
 &nbsp;
 
