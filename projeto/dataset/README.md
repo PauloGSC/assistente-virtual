@@ -7,13 +7,12 @@
 | Carros    |   100 |       100 |
 | Garrafas  |       |           |
 | Xícaras   |   100 |       100 |
-| Múltiplos |   100 |        37 |
+| Múltiplos |   100 |        20 |
 
 ### Versionamento
 
 - No repositório, será mantida somente a versão mais recente e atualizada do dataset
 - As versões anteriores ou obsoletas serão retiradas do repositório e armazenadas no [Kaggle](https://www.kaggle.com)
--
 
 ### Visão geral
 
