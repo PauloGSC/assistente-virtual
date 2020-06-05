@@ -55,6 +55,6 @@ while c < len(arqs):
 		prox1 = getn1(arqs[c])
 		if prox1 > r1:
 			i1 += 1
-			i2 = 1
+			i2 = 0
 		else:
 			i2 += 1
