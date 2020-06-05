@@ -16,19 +16,19 @@ psr = argparse.ArgumentParser(description="""
 	quando há 'saltos' entre os números (ex.: 1, 2, 4, 5, 6, 9, ...)."""
 )
 
-psr.add_argument("ps", help="Caminho dos arquivos.")
+psr.add_argument("p", help="Caminho dos arquivos.")
 
 args = psr.parse_args()
 
-ps = args.ps
+p = args.p
 
 # normalizando paths
 
-ps = path.abspath(path.expanduser(ps))
+p = path.abspath(path.expanduser(p))
 
 # obtendo a lista de arquivos
 
-os.chdir(ps)
+os.chdir(p)
 arqs = os.listdir()
 arqs.sort()
 
@@ -37,8 +37,8 @@ arqs.sort()
 pfx = getPfx(arqs[0])
 ext = getExt(arqs[0])
 
-i1 = 1
-i2 = 1
+i1 = 0
+i2 = 0
 c = 0
 while c < len(arqs):
 	a = arqs[c]
@@ -46,7 +46,7 @@ while c < len(arqs):
 	r2 = getn2(a)
 
 	novo = "{}-{}-{}.{}".format(pfx, str(i1).zfill(3), str(i2).zfill(3), ext)
-	ren = path.join(ps, novo)
+	ren = path.join(p, novo)
 	os.rename(a, ren)
 
 	c += 1
