@@ -73,40 +73,45 @@ while True:
 	w = img.shape[1]
 	h = img.shape[0]
 
-	with open(pcl) as l:
-		for line in l.read().splitlines():
+	# analisando a label, caso exista
 
-			# extraindo as informações de cada 'bounding box' da label
+	if path.exists(pcl):
+		with open(pcl) as l:
+			for line in l.read().splitlines():
 
-			lab = [n for n in line.split()]
-			label = dict(cls=int(lab[0]), x=float(lab[1]), y=float(lab[2]),
-						 w=float(lab[3]), h=float(lab[4]))
+				# extraindo as informações de cada 'bounding box' da label
 
-			# desnormalizando as coordenadas e medidas
+				lab = [n for n in line.split()]
+				label = dict(cls=int(lab[0]), x=float(lab[1]), y=float(lab[2]),
+							 w=float(lab[3]), h=float(lab[4]))
 
-			label["x"] *= w
-			label["y"] *= h
-			label["w"] *= w
-			label["h"] *= h
+				# desnormalizando as coordenadas e medidas
 
-			# calculando as coordenadas para desenhar a 'bounding box'
+				label["x"] *= w
+				label["y"] *= h
+				label["w"] *= w
+				label["h"] *= h
 
-			tl = (label["x"]-label["w"]/2, label["y"]-label["h"]/2)
-			br = (label["x"]+label["w"]/2, label["y"]+label["h"]/2)
-			tl = (int(tl[0]), int(tl[1]))
-			br = (int(br[0]), int(br[1]))
+				# calculando as coordenadas para desenhar a 'bounding box'
 
-			# desenhando a 'bounding box'
+				tl = (label["x"]-label["w"]/2, label["y"]-label["h"]/2)
+				br = (label["x"]+label["w"]/2, label["y"]+label["h"]/2)
+				tl = (int(tl[0]), int(tl[1]))
+				br = (int(br[0]), int(br[1]))
 
-			bgr = (rre(256), rre(256), rre(256))
-			cv.rectangle(img, tl, br, bgr, 3)
+				# desenhando a 'bounding box'
 
-			# desenhando o nome da classe relativa à 'bounding box'
+				bgr = (rre(256), rre(256), rre(256))
+				cv.rectangle(img, tl, br, bgr, 3)
 
-			txt = classes[label["cls"]]
-			corner = (tl[0]+5, tl[1]+22)
-			font = cv.FONT_HERSHEY_PLAIN
-			cv.putText(img, txt, corner, font, 1.5, bgr, 2, 16)
+				# desenhando o nome da classe relativa à 'bounding box'
+
+				size = label["w"] / 140
+				txt = classes[label["cls"]]
+				corner = (tl[0]+5, tl[1]+22)
+				font = cv.FONT_HERSHEY_PLAIN
+				thick = 2 if size > 0.7 else 1
+				cv.putText(img, txt, corner, font, size, bgr, thick, 16)
 
 	# ajustando tamanho da janela
 
