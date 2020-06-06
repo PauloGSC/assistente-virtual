@@ -8,9 +8,9 @@ Contém os códigos, datasets, modelos, arquivos de pesos, arquivos de configura
 
 #### Tarefa do projeto
 
-1. Colocar uma caixa pequena (ex.: de remédio)
-2. Colocar uma xícara
-3. Colocar um carrinho de brinquedo
+1. Posicionar uma garrafa
+2. Posicionar uma xícara
+3. Posicionar um carrinho de brinquedo
 
 ###### FSM da tarefa
 
