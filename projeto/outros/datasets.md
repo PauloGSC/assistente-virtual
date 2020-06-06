@@ -4,7 +4,12 @@ Lista de datasets de terceiros que podem ser incorporados ao projeto, parcial ou
 
 #### Lista
 
-- [Compilado de datasets de imagens](https://blog.cambridgespark.com/50-free-machine-learning-datasets-image-datasets-241852b03b49)
+- [Compilado 1 de datasets de imagens](https://blog.cambridgespark.com/50-free-machine-learning-datasets-image-datasets-241852b03b49)
+- [Compilado 2 de datasets de imagens](https://www.imageannotation.ai/blog/top-10-image-datasets-for-machine-learning)
+
+&nbsp;
+
+- [Dataset de carrinhos](http://lear.inrialpes.fr/people/nowak/similarity/index.html)
 
 &nbsp;
 
@@ -13,15 +18,4 @@ Lista de datasets de terceiros que podem ser incorporados ao projeto, parcial ou
 
 &nbsp;
 
-- [Dataset de objetos domésticos](http://www.vision.caltech.edu/pmoreels/Datasets/Home_Objects_06/)
-- [Dataset de lixo descartado](http://tacodataset.org/)
-- [Dataset com algumas garrafas](http://www.slipguru.unige.it/Data/glassense_vision/)
 - [Dataset de garrafas plásticas](https://www.kaggle.com/deadskull7/cola-bottle-identification)
-
-&nbsp;
-
-- [Dataset de brinquedos](http://www.vision.caltech.edu/pmoreels/Datasets/Giuseppe_Toys_03/)
-
-&nbsp;
-
-- [Dataset contendo xícaras](http://ai.stanford.edu/~asaxena/robotdatacollection/dataset.html)
