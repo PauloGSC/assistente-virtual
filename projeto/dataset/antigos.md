@@ -2,6 +2,7 @@
 
 | Nome  | Link |
 |:-----:|:----:|
+| Imagens de caixas | [Kaggle](https://www.kaggle.com/paulogsc/caixas) |
 | Vídeos de caixas | [Kaggle](https://www.kaggle.com/paulogsc/caixas1) |
 | Vídeos de carros | [Kaggle](https://www.kaggle.com/paulogsc/carros1) |
 | Vídeos de xícaras | [Kaggle](https://www.kaggle.com/paulogsc/xicaras1) |
