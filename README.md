@@ -10,6 +10,7 @@ da [UFFS campus Chapecó](https://www.uffs.edu.br/campi/chapeco).
 ### :man_teacher: Orientador
 
 - Claunir Pavan
+  - [GitHub](https://github.com/cleopavan)
   - [Lattes](http://lattes.cnpq.br/7362574930328474)
 
 ### :man_student: Acadêmicos
@@ -23,7 +24,7 @@ da [UFFS campus Chapecó](https://www.uffs.edu.br/campi/chapeco).
   - [LinkedIn](http://linkedin.com/in/richard-herrera-b096a8187)
 
 - Raphael Borges dos Santos Filho (voluntário)
-  - [Github](http://github.com/oraphaborges)
+  - [GitHub](http://github.com/oraphaborges)
   - [LinkedIn](https://br.linkedin.com/in/raphael-borges-63a04591)
 
 ### :pen: Descrição
