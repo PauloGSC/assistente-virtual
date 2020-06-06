@@ -17,8 +17,7 @@
 ### Visão geral
 
 - Serão coletadas imagens de objetos de 3 classes (carrinhos de brinquedo, garrafas e xícaras)
-- Cada classe possui ~100 amostras distintas entre si
-- Adicionalmente, ~100 cenários contendo múltiplos (2 ou 3) objetos também serão registrados
+- Adicionalmente, cenários contendo múltiplos (2 ou 3) objetos também serão registrados
 
 ### Forma de coleta
 
