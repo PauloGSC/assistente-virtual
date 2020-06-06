@@ -7,7 +7,7 @@
 | Carros    |   100 |       100 |
 | Garrafas  |       |           |
 | Xícaras   |   100 |       100 |
-| Múltiplos |   100 |        20 |
+| Múltiplos |    40 |        20 |
 
 ### Versionamento
 
@@ -35,3 +35,5 @@
 - Para cada vídeo, são extraídas __1,5 imagens por segundo__ (para evitar tanta repetição entre os frames)
 
 ### Datasets externos
+
+Além da coleta manual das imagens, também serão emprestadas imagens de outros datasets de terceiros. Os créditos para essas imagens externas estará presente no [arquivo de créditos](creditos.md).
