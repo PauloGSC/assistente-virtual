@@ -11,7 +11,3 @@ Lista de datasets de terceiros que podem ser incorporados ao projeto, parcial ou
 
 - [Dataset com xícaras e carrinhos](https://aivaslab.github.io/toybox/)
 - [Dataset contendo garrafas e xícaras](http://rgbd-dataset.cs.washington.edu/dataset/rgbd-dataset_full/)
-
-&nbsp;
-
-- [Dataset de garrafas plásticas](https://www.kaggle.com/deadskull7/cola-bottle-identification)
