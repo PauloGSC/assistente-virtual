@@ -8,6 +8,7 @@ Créditos para as imagens/rótulos presentes no dataset que vieram de datasets d
 |:----:|:----------:|:-------:|
 | Imagem | carro-097-*.jpg | [Link](http://www.vision.caltech.edu/pmoreels/Datasets/Giuseppe_Toys_03/) |
 | Imagem | carro-098-*.jpg | [Link](https://www1.cs.columbia.edu/CAVE/software/softlib/coil-100.php) |
+| Imagem | carro-099-*.jpg | [Link](http://lear.inrialpes.fr/people/nowak/similarity/index.html) |
 | Imagem | garrafa-000-*.jpg | [Link](http://www.slipguru.unige.it/Data/glassense_vision/) |
 | Imagem | garrafa-001-*.jpg | [Link](http://www.vision.caltech.edu/pmoreels/Datasets/Home_Objects_06/) |
 | Imagem | garrafa-002-*.jpg | [Link](http://tacodataset.org/) |

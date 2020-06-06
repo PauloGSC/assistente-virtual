@@ -9,10 +9,6 @@ Lista de datasets de terceiros que podem ser incorporados ao projeto, parcial ou
 
 &nbsp;
 
-- [Dataset de carrinhos](http://lear.inrialpes.fr/people/nowak/similarity/index.html)
-
-&nbsp;
-
 - [Dataset com xícaras e carrinhos](https://aivaslab.github.io/toybox/)
 - [Dataset contendo garrafas e xícaras](http://rgbd-dataset.cs.washington.edu/dataset/rgbd-dataset_full/)
 
