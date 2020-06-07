@@ -2,12 +2,12 @@
 
 ### Acompanhamento da coleta
 
-| Objeto    | Total | Coletados |
+| Objeto    | Meta  | Coletados |
 |:---------:|:-----:|:---------:|
-| Carros    |   100 |       100 |
-| Garrafas  |       |           |
-| Xícaras   |   100 |       100 |
-| Múltiplos |    40 |        20 |
+| Carros    | 3000  | 3000      |
+| Garrafas  | 3000  | 750       |
+| Xícaras   | 3000  | 3000      |
+| Múltiplos |       | 424       |
 
 ### Versionamento
 
@@ -32,6 +32,7 @@
 ### Extração das imagens
 
 - Para cada vídeo, são extraídas __1,5 imagens por segundo__ (para evitar tanta repetição entre os frames)
+- Cada imagem é analisada cuidadosamente; imagens muito borradas, sem foco ou com qualidade ruim são descartadas
 
 ### Datasets externos
 
