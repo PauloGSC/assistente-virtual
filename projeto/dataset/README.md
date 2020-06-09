@@ -5,9 +5,9 @@
 | Objeto    | Meta  | Coletados |
 |:---------:|:-----:|:---------:|
 | Carros    | 3000  | 3000      |
-| Garrafas  | 3000  | 750       |
+| Garrafas  | 1500  | 1302      |
 | Xícaras   | 3000  | 3000      |
-| Múltiplos |       | 424       |
+| Múltiplos |       | 425       |
 
 ### Versionamento
 
