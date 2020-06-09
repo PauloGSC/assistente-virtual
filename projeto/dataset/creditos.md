@@ -22,3 +22,4 @@ Créditos para as imagens/rótulos presentes no dataset que vieram de datasets d
 | Imagem | xicara-103-*.jpg | [Link]((http://rgbd-dataset.cs.washington.edu/dataset/rgbd-dataset_full/)) |
 | Imagem | mult-020-000.jpg | [Link](http://www.vision.caltech.edu/pmoreels/Datasets/Home_Objects_06/) |
 | Imagem | mult-021-*.jpg | [Link](http://ai.stanford.edu/~asaxena/robotdatacollection/dataset.html) |
+| Imagem | mult-022-000.jpg | Imagens livres de copyright ([fonte](https://pixabay.com/)) |
