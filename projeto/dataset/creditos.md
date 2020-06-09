@@ -15,6 +15,7 @@ Créditos para as imagens/rótulos presentes no dataset que vieram de datasets d
 | Imagem | garrafa-002-*.jpg | [Link](http://tacodataset.org/) |
 | Imagem | garrafa-003-*.jpg | [Link](https://www.kaggle.com/deadskull7/cola-bottle-identification) |
 | Imagem | garrafa-004-*.jpg | [Link]((http://rgbd-dataset.cs.washington.edu/dataset/rgbd-dataset_full/)) |
+| Imagem | garrafa-005-*.jpg | Imagens livres de copyright ([fonte](https://pixabay.com/)) |
 | Imagem | xicara-100-000 | [Link](http://www.vision.caltech.edu/pmoreels/Datasets/Home_Objects_06/) |
 | Imagem | xicara-101-*.jpg | [Link](http://ai.stanford.edu/~asaxena/robotdatacollection/dataset.html) |
 | Imagem | xicara-102-*.jpg | [Link](https://www1.cs.columbia.edu/CAVE/software/softlib/coil-100.php) |
