@@ -7,7 +7,7 @@
 | Carros    | 3000  | 3000      |
 | Garrafas  | 1500  | 1302      |
 | Xícaras   | 3000  | 3000      |
-| Múltiplos |       | 425       |
+| Múltiplos | 1000  | 425       |
 
 ### Versionamento
 
