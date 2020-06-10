@@ -1,13 +1,14 @@
 ## Coleta do dataset
 
-### Acompanhamento da coleta
+### Acompanhamento da coleta/rotulagem
 
-| Objeto    | Meta  | Coletados |
-|:---------:|:-----:|:---------:|
-| Carros    | 3000  | 3000      |
-| Garrafas  | 1500  | 1302      |
-| Xícaras   | 3000  | 3000      |
-| Múltiplos | 1000  | 425       |
+| Categoria | Meta     | Coletados | Rotulados |
+|:---------:|:--------:|:---------:|:---------:|
+| Carros    | 3000     | 3005      | 82        |
+| Garrafas  | 1500     | 1298      | 747       |
+| Xícaras   | 3000     | 2927      | 182       |
+| Múltiplos | 500      | 425       | 0         |
+|           | __8000__ | __7655__  | __1011__  |
 
 ### Versionamento
 
