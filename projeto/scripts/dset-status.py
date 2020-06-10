@@ -5,9 +5,13 @@ Script para mostrar as estatísticas do dataset.
 from collections import defaultdict
 from glob import glob
 from shutil import get_terminal_size
+from sys import argv
 import os
+from os import path
 
-os.chdir("../dataset")
+scr = path.abspath(path.expanduser(path.dirname(argv[0])))
+dset = path.join(path.dirname(scr), "dataset")
+os.chdir(dset)
 
 # estatísticas dos carros
 
@@ -75,7 +79,7 @@ os.chdir("..")
 
 # estatísticas totais
 
-tot = defaultdict()
+tot = dict()
 tot["i"] = car["i"] + gar["i"] + xic["i"] + mul["i"]
 tot["l"] = car["l"] + gar["l"] + xic["l"] + mul["l"]
 tot["%"] = int(tot["l"] / tot["i"] * 100)
