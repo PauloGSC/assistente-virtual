@@ -88,6 +88,10 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 &nbsp;
 
+- [Cobertura do YOLOv5](https://blog.roboflow.ai/yolov5-is-here/)
+
+&nbsp;
+
 - [Aplicação de Object Tracking](https://www.move-lab.com/blog/tracking-things-in-object-detection-videos)
 - [Guia de Object Detection e Tracking em PyTorch e com YOLOv3](https://towardsdatascience.com/object-detection-and-tracking-in-pytorch-b3cf1a696a98)
 - [Algoritmo de Object Tracking](https://nanonets.com/blog/object-tracking-deepsort/)
