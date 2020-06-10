@@ -1,4 +1,4 @@
-## Coleta do dataset
+## Dataset
 
 ### Acompanhamento da coleta/rotulagem
 
@@ -37,4 +37,4 @@
 
 ### Datasets externos
 
-Além da coleta manual das imagens, também serão emprestadas imagens de outros datasets de terceiros. Os créditos para essas imagens externas estará presente no [arquivo de créditos](creditos.md).
+Além da coleta manual das imagens, também serão emprestadas imagens de outros datasets de terceiros. Os créditos para essas imagens externas estarão presente no [arquivo de créditos](creditos.md).
