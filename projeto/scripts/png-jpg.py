@@ -1,7 +1,7 @@
 import argparse
 import os
 from os import path
-from subprocess import call
+from subprocess import run
 
 # obtendo argumentos da linha de comando
 
@@ -26,9 +26,9 @@ p = path.abspath(path.expanduser(p))
 os.chdir(p)
 
 com1 = "mogrify -format jpg -quality {} *.png".format(q)
-call(com1, shell=True)
+run(com1, shell=True)
 
 # excluindo arquivos .png
 
 com2 = "rm *.png"
-call(com2, shell=True)
+run(com2, shell=True)

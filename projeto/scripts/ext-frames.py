@@ -2,7 +2,7 @@ import argparse
 from glob import glob
 import os
 from os import path
-from subprocess import call
+from subprocess import run
 
 # obtendo argumentos da linha de comando
 
@@ -53,7 +53,7 @@ for v in vids:
 		p2 = path.join(pd, fr)
 		com = "ffmpeg -i {} -ss {} -r {} -q:v {} {}"\
 			  .format(p1, args.s, args.r, args.q, p2)
-		call(com, shell=True)
+		run(com, shell=True)
 
 # geralmente os dois primeiros frames do vídeo sao muito parecidos
 # assim, exclui-se o primeiro frame de cada vídeo

@@ -2,7 +2,7 @@ import argparse
 from glob import glob
 import os
 from os import path
-from subprocess import call
+from subprocess import run
 
 # usando o argparser para a linha de comando
 
@@ -38,4 +38,4 @@ for v in vids:
 	p1 = path.join(ps, v)
 	p2 = path.join(pd, v)
 	com = "ffmpeg -i {} -an {}".format(p1, p2)
-	call(com, shell=True)
+	run(com, shell=True)
