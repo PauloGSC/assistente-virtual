@@ -9,6 +9,8 @@ from sys import argv
 import os
 from os import path
 
+# entrando na pasta dataset
+
 scr = path.abspath(path.expanduser(path.dirname(argv[0])))
 dset = path.join(path.dirname(scr), "dataset")
 os.chdir(dset)
