@@ -3,12 +3,7 @@ import cv2 as cv
 from glob import glob
 import os
 from os import path
-from random import seed, randrange as rre
 from screeninfo import get_monitors
-
-# gerando uma nova seed aleatória
-
-seed()
 
 # obtendo os argumentos da linha de comando
 
@@ -24,6 +19,7 @@ psr.add_argument("pi", help="Diretório com as imagens.")
 psr.add_argument("cls", help="Arquivo com as classes.")
 psr.add_argument("-pl", help="Diretório com os rótulos.")
 psr.add_argument("-ei", default="jpg", help="Extensão das imagens (default=jpg).")
+psr.add_argument("-s", default="0", help="Início do slideshow (default=0).")
 
 args = psr.parse_args()
 
@@ -44,8 +40,12 @@ imgs.sort()
 
 # obtendo as classes
 
-with open(cls) as c:
-	classes = c.read().splitlines()
+# with open(cls) as c:
+# 	classes = c.read().splitlines()
+
+# cor para cada classe
+
+cor = {0:(100, 0, 0), 1:(0, 100, 0), 2:(0, 0, 100)}
 
 # obtendo tamanho máximo da janela
 
@@ -53,9 +53,16 @@ fat = 0.75
 W = int(get_monitors()[0].width * fat)
 H = int(get_monitors()[0].height * fat)
 
+# setando início do slideshow
+
+if args.s.isdigit():
+	pos = int(args.s)
+else:
+	args.s = path.basename(args.s)
+	pos = imgs.index(args.s) if args.s in imgs else 0
+
 # controlando o 'slideshow'
 
-pos = 0
 while True:
 
 	# imagem atual e label dessa imagem
@@ -101,17 +108,28 @@ while True:
 
 				# desenhando a 'bounding box'
 
-				bgr = (rre(256), rre(256), rre(256))
-				cv.rectangle(img, tl, br, bgr, 3)
+				bgr = cor[label["cls"]]
+				cv.rectangle(img, tl, br, bgr, thickness=10)
 
-				# desenhando o nome da classe relativa à 'bounding box'
+				# desenhando o retângulo de fundo do texto
 
-				size = label["w"] / 140
-				txt = classes[label["cls"]]
-				corner = (tl[0]+5, tl[1]+22)
-				font = cv.FONT_HERSHEY_PLAIN
-				thick = 2 if size > 0.7 else 1
-				cv.putText(img, txt, corner, font, size, bgr, thick, 16)
+				# txt = str(label["cls"]) # classes[label["cls"]]
+				# fontFace = cv.FONT_HERSHEY_PLAIN
+				# fontScale = 5
+				# thick = 5
+				# line = cv.LINE_AA
+				#
+				# corn1 = (tl[0]+10, tl[1]+75)
+				# w2, h2 = cv.getTextSize(txt, fontFace, fontScale, thick)[0]
+				# corn2 = (corn1[0]+w2+5, corn1[1]-h2-15)
+				#
+				# cv.rectangle(img, corn1, corn2, bgr, cv.FILLED)
+				#
+				# # desenhando o texto
+				#
+				# org = (corn1[0]+5, corn1[1]-5)
+				#
+				# cv.putText(img, txt, org, fontFace, fontScale, (255, 255, 255), thick, line)
 
 	# ajustando tamanho da janela
 

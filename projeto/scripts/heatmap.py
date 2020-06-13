@@ -109,7 +109,7 @@ print("Pixels normalizados em {:.1f}s".format(ts2-ts1))
 # mostrando o heatmap
 
 tsf = perf()
-print("Tempo total de execução: {:.1f}".format(tsf-tsi))
+print("Tempo total de execução: {:.1f}s".format(tsf-tsi))
 
 cv.imshow("HEATMAP", heatmap)
 cv.waitKey(0)
