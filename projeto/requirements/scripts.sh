@@ -4,6 +4,8 @@ bash /.assets/update.sh
 sudo apt install -y python3-numpy
 # programa para operações com vídeos
 sudo apt install -y ffmpeg
+# programa para remover EXIF de imagens
+sudo apt-get install -y libimage-exiftool-perl
 
 # biblioteca de processamento de imagem
 sudo pip3 install --upgrade Pillow
