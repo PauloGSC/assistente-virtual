@@ -9,4 +9,9 @@ Lista de datasets de terceiros que podem ser incorporados ao projeto, parcial ou
 
 &nbsp;
 
+- [arfika](https://dataturks.com/projects/arfika)
+- [recycling](http://web.cecs.pdx.edu/~singh/rcyc-web/index.html)
+
+&nbsp;
+
 - [Dataset com xícaras e carrinhos](https://aivaslab.github.io/toybox/)
