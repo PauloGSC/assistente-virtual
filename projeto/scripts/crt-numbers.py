@@ -16,6 +16,8 @@ psr = argparse.ArgumentParser(description="""
 )
 
 psr.add_argument("p", help="Caminho dos arquivos.")
+psr.add_argument("-n1", type=int, default=0)
+psr.add_argument("-n2", type=int, default=0)
 
 args = psr.parse_args()
 
@@ -35,11 +37,11 @@ imgs.sort()
 
 pfx = getPfx(imgs[0])
 
-i1 = 0
-i2 = 0
+n1 = args.n1
+n2 = args.n2
 c = 0
 while c < len(imgs):
-	temp = "{}-{}-{}".format(pfx, str(i1).zfill(3), str(i2).zfill(3))
+	temp = "{}-{}-{}".format(pfx, str(n1).zfill(3), str(n2).zfill(3))
 
 	ai = imgs[c]
 	ni = temp + ".jpg"
@@ -55,7 +57,7 @@ while c < len(imgs):
 		prox1 = getn1(imgs[c])
 		r1 = getn1(ai)
 		if prox1 > r1:
-			i1 += 1
-			i2 = 0
+			n1 += 1
+			n2 = 0
 		else:
-			i2 += 1
+			n2 += 1
