@@ -2,7 +2,7 @@ import argparse
 from glob import glob
 import os
 from os import path
-from subprocess import run
+from subprocess import run, DEVNULL
 
 # obtendo argumentos da linha de comando
 
@@ -26,4 +26,4 @@ com1 = "exiftool -all= *.jpg"
 run(com1, shell=True)
 
 com2 = "rm *.jpg_original"
-run(com2, shell=True)
+run(com2, shell=True, stderr=DEVNULL)
