@@ -14,3 +14,4 @@
 |      |     | 4 | Coleta do dataset |
 |      | 06  | 1 | Troca de objeto; recoleta do dataset; datasets externos; início da rotulagem |
 |      |     | 2 | Rotulagem do dataset |
+|      |     | 3 | Rotulagem do dataset |
