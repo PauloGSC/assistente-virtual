@@ -9,6 +9,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 #### Links
 
+- [Curso de ML da Google](https://developers.google.com/machine-learning/crash-course)
 - [Slides de DL de Stanford](https://cs230.stanford.edu/winter2020/)
 - [Cheatsheets de ML e DL de Stanford](https://stanford.edu/~shervine/teaching/)
 - [Site de Deep Learning com OpenCV](https://www.learnopencv.com/)
@@ -34,6 +35,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 - [Tutorial de taxa de aprendizado](https://machinelearningmastery.com/learning-rate-for-deep-learning-neural-networks/)
 - [Explicação sobre funções de perda](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/)
 - [Tutorial de funções de perda](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)
+- [Explicação sobre métricas em ML](https://medium.com/@vitorborbarodrigues/m%C3%A9tricas-de-avalia%C3%A7%C3%A3o-acur%C3%A1cia-precis%C3%A3o-recall-quais-as-diferen%C3%A7as-c8f05e0a513c)
 - [Dicas de performance para Deep Learning](https://machinelearningmastery.com/improve-deep-learning-performance/)
 
 &nbsp;
