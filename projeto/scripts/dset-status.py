@@ -4,10 +4,10 @@ Script para mostrar as estatísticas do dataset.
 
 from collections import defaultdict
 from glob import glob
-from shutil import get_terminal_size
-from sys import argv
 import os
 from os import path
+from shutil import get_terminal_size
+from sys import argv
 
 # entrando na pasta dataset
 
