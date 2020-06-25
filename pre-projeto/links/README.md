@@ -58,6 +58,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 - [Website de PyTorch](https://pytorch.org/)
 - [Tutoriais de PyTorch](https://www.learnopencv.com/learn-pytorch/)
+- [PyTorch para Iniciantes](https://www.analyticsvidhya.com/blog/2019/09/introduction-to-pytorch-from-scratch/?utm_source=blog&utm_medium=image-augmentation-deep-learning-pytorch)
 - [Artigo sobre transfer learning com PyTorch](https://towardsdatascience.com/transfer-learning-picking-the-right-pre-trained-model-for-your-problem-bac69b488d16)
 - [Finetuning em PyTorch](https://discuss.pytorch.org/t/how-to-perform-finetuning-in-pytorch/419)
 - [Canal de deep learning com PyTorch](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ)
