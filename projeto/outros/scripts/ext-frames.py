@@ -1,7 +1,7 @@
 import argparse
 from glob import glob
 import os
-from os import path
+import os.path as path
 from subprocess import run
 
 # obtendo argumentos da linha de comando

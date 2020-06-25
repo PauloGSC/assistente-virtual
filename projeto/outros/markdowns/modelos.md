@@ -16,7 +16,7 @@ Os Pesos são os reais parâmetros da rede, as conexões entre as camadas (aquil
 
 - [Repositório original do YOLO](https://github.com/pjreddie/darknet)
 - [Versão melhorada do código original](https://github.com/AlexeyAB/darknet)
-- Implementações didáticas de YOLOv3 em PyTorch: [1](https://github.com/ayooshkathuria/YOLO_v3_tutorial_from_scratch), [2](https://github.com/ayooshkathuria/YOLO_v3_tutorial_from_scratch)
+- Implementações didáticas de YOLOv3 em PyTorch: [1](https://github.com/ayooshkathuria/YOLO_v3_tutorial_from_scratch), [2](https://github.com/ayooshkathuria/pytorch-yolo-v3)
 - [Implementação mínima de YOLOv3 em PyTorch](https://github.com/eriklindernoren/PyTorch-YOLOv3)
 - [Outra implementação de YOLOv3](https://github.com/ultralytics/yolov3)
 - [Implementação completinha de YOLOv3](https://github.com/westerndigitalcorporation/YOLOv3-in-PyTorch)

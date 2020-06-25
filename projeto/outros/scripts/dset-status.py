@@ -5,15 +5,15 @@ Script para mostrar as estatísticas do dataset.
 from collections import defaultdict
 from glob import glob
 import os
-from os import path
+import os.path as path
 from shutil import get_terminal_size
 from sys import argv
 
 # entrando na pasta dataset
 
 scr = path.abspath(path.expanduser(path.dirname(argv[0])))
-dset = path.join(path.dirname(scr), "dataset")
-os.chdir(dset)
+os.chdir(scr)
+os.chdir("../../projeto/dataset")
 
 # estatísticas dos carros
 

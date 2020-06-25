@@ -3,7 +3,7 @@ import cv2 as cv
 from glob import glob
 import numpy as np
 import os
-from os import path
+import os.path as path
 from sys import argv
 from time import perf_counter as perf
 
@@ -37,8 +37,8 @@ size = psr.parse_args().s
 # entrando na pasta do dataset
 
 scr = path.abspath(path.expanduser(path.dirname(argv[0])))
-dset = path.join(path.dirname(scr), "dataset")
-os.chdir(dset)
+os.chdir(scr)
+os.chdir("../../projeto/dataset")
 
 # inicializando heatmap
 

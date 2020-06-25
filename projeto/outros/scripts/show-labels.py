@@ -2,7 +2,7 @@ import argparse
 import cv2 as cv
 from glob import glob
 import os
-from os import path
+import os.path as path
 from screeninfo import get_monitors
 
 # obtendo os argumentos da linha de comando
