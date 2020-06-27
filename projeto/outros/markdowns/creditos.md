@@ -33,7 +33,7 @@ Créditos para as imagens presentes no dataset que vieram de datasets de terceir
 | xicara-100-000 | [Link](http://www.vision.caltech.edu/pmoreels/Datasets/Home_Objects_06/) |
 | xicara-101-*.jpg | [Link](http://ai.stanford.edu/~asaxena/robotdatacollection/dataset.html) |
 | xicara-102-*.jpg | [Link](https://www1.cs.columbia.edu/CAVE/software/softlib/coil-100.php) |
-| xicara-103-*.jpg | [Link]((http://rgbd-dataset.cs.washington.edu/dataset/rgbd-dataset_full/)) |
+| xicara-103-*.jpg | [Link](http://rgbd-dataset.cs.washington.edu/dataset/rgbd-dataset_full/) |
 | xicara-104-*.jpg | Imagens livres de copyright ([fonte](https://pixabay.com/)) |
 | mult-000-000.jpg | [Link](http://www.vision.caltech.edu/pmoreels/Datasets/Home_Objects_06/) |
 | mult-001-*.jpg | [Link](http://ai.stanford.edu/~asaxena/robotdatacollection/dataset.html) |
