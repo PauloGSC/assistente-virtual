@@ -2,12 +2,13 @@
 
 ### Acompanhamento da coleta/rotulagem
 
-| Categoria | Meta     | Coletados | Rotulados |
-|:---------:|:--------:|:---------:|:---------:|
-| Carros    | 3000     | 3011      | 3011      |
-| Garrafas  | 3000     | 3008      | 2026      |
-| Xícaras   | 3000     | 3020      | 3020      |
-|           |          | __9056__  | __8074__  |
+| Categoria   | Meta     | Coletados | Rotulados |
+|:-----------:|:--------:|:---------:|:---------:|
+| Carros      | 3000     | 3011      | 3011      |
+| Garrafas    | 3000     | 3008      | 2680      |
+| Xícaras     | 3000     | 3021      | 3021      |
+| _Múltiplos_ |          | 16        | 16        |
+|             |          | __9056__  | __8728__  |
 
 ### Versionamento
 
