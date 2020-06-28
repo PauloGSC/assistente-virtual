@@ -12,6 +12,7 @@
 |      |     | 2 | Definição da tarefa e dos objetos a serem usados |
 |      |     | 3 | Coleta do dataset |
 |      |     | 4 | Coleta do dataset |
-|      | 06  | 1 | Troca de objeto; recoleta do dataset; datasets externos; início da rotulagem |
+|      | 06  | 1 | Coleta/rotulagem do dataset |
 |      |     | 2 | Rotulagem do dataset |
 |      |     | 3 | Rotulagem do dataset |
+|      |     | 4 | Elaboração do detector de objetos |
