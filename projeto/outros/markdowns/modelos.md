@@ -17,7 +17,7 @@ Os Pesos são os reais parâmetros da rede, as conexões entre as camadas (aquil
 #### Lista
 
 | Repositório | Custom data | Finetuning |
-|:----------:-|:-------------------:|:----------:|
+|:-----------:|:-----------:|:----------:|
 | [YoloV3-Custom-Object-Detection][0] | Ótimo | Bom |
 | [YOLOv3_PyTorch][1] | Ruim | Bom |
 | [YOLOv3-in-PyTorch][2] | Bom | Bom |
