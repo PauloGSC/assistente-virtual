@@ -6,7 +6,7 @@ Os modelos devem estar escritos em PyTorch, ser da versão 3, 4 ou 5 do YOLO e s
 
 #### Explicação
 
-![Modelo](../../.assets/modelo.png)
+![Modelo](/.assets/modelo.png)
 
 Um modelo, em Deep Learning, é uma combinação de Arquitetura + Pesos.
 
