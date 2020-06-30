@@ -4,7 +4,7 @@ Contém os códigos, datasets, modelos, arquivos de pesos, arquivos de configura
 
 #### Workflow do projeto
 
-![Modelo](../.assets/workflow.png)
+![Modelo](/.assets/workflow.png)
 
 #### Tarefa do projeto
 
@@ -14,4 +14,4 @@ Contém os códigos, datasets, modelos, arquivos de pesos, arquivos de configura
 
 ###### FSM da tarefa
 
-![FSM](../.assets/fsm.png)
+![FSM](/.assets/fsm.png)
