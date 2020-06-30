@@ -15,91 +15,50 @@ scr = path.abspath(path.expanduser(path.dirname(argv[0])))
 os.chdir(scr)
 os.chdir("../../projeto/dataset")
 
-# estatísticas dos carros
+# obtendo estatísticas de cada subdiretório
 
-os.chdir("carros")
-car = defaultdict(int)
-lbls = glob("*.txt")
-if "classes.txt" in lbls: lbls.remove("classes.txt")
+stats = dict()
+with os.scandir(".") as scan:
+    for entry in scan:
+        if entry.is_dir():
+            name = entry.name
+            os.chdir(name)
 
-car["i"] = len(glob("*.jpg"))
-car["l"] = len(lbls)
-car["%"] = int(car["l"] / car["i"] * 100)
-for l in lbls:
-    a = open(l)
-    car["o"] += len(a.readlines())
-    a.close()
+            dic = defaultdict(int)
 
-os.chdir("..")
+            lbls = glob("*.txt")
+            if "classes.txt" in lbls: lbls.remove("classes.txt")
 
-# estatísticas das garrafas
+            dic["i"] = len(glob("*.jpg"))
+            dic["l"] = len(lbls)
+            dic["%"] = int(dic["l"]/dic["i"] * 100)
+            for l in lbls:
+                a = open(l)
+                dic["o"] += len(a.readlines())
+                a.close()
 
-os.chdir("garrafas")
-gar = defaultdict(int)
-lbls = glob("*.txt")
-if "classes.txt" in lbls: lbls.remove("classes.txt")
+            stats[name] = dic
 
-gar["i"] = len(glob("*.jpg"))
-gar["l"] = len(lbls)
-gar["%"] = int(gar["l"] / gar["i"] * 100)
-for l in lbls:
-    a = open(l)
-    gar["o"] += len(a.readlines())
-    a.close()
-
-os.chdir("..")
-
-# estatísticas das xícaras
-
-os.chdir("xicaras")
-xic = defaultdict(int)
-lbls = glob("*.txt")
-if "classes.txt" in lbls: lbls.remove("classes.txt")
-
-xic["i"] = len(glob("*.jpg"))
-xic["l"] = len(lbls)
-xic["%"] = int(xic["l"] / xic["i"] * 100)
-for l in lbls:
-    a = open(l)
-    xic["o"] += len(a.readlines())
-    a.close()
-
-os.chdir("..")
-
-# estatísticas dos múltiplos
-
-os.chdir("mult")
-mul = defaultdict(int)
-lbls = glob("*.txt")
-if "classes.txt" in lbls: lbls.remove("classes.txt")
-
-mul["i"] = len(glob("*.jpg"))
-mul["l"] = len(lbls)
-mul["%"] = int(mul["l"] / mul["i"] * 100)
-for l in lbls:
-    a = open(l)
-    mul["o"] += len(a.readlines())
-    a.close()
-
-os.chdir("..")
+            os.chdir("..")
 
 # estatísticas totais
 
-tot = dict()
-tot["i"] = car["i"] + gar["i"] + xic["i"] + mul["i"]
-tot["l"] = car["l"] + gar["l"] + xic["l"] + mul["l"]
-tot["%"] = int(tot["l"] / tot["i"] * 100)
-tot["o"] = car["o"] + gar["o"] + xic["o"] + mul["o"]
+tot = defaultdict(int)
+for d in stats.values():
+    tot["i"] += d["i"]
+    tot["l"] += d["l"]
+    tot["o"] += d["o"]
+tot["%"] = int(tot["l"]/tot["i"] * 100)
+
+stats["TOTAL"] = tot
 
 # imprimindo estatísticas
 
 w = get_terminal_size().columns
 
-dics = dict(CARROS=car, GARRAFAS=gar, XICARAS=xic, MULTIPLOS=mul, TOTAL=tot)
-
 print()
 print("ESTATÍSTICAS".center(w, "_"))
-for n, d in dics.items():
+for n, d in stats.items():
     print()
     print("-"*w)
     print("|{}|".format(n.center(w-2)))

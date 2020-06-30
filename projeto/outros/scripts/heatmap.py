@@ -1,11 +1,15 @@
 import argparse
-import cv2 as cv
+from collections import defaultdict
+from copy import deepcopy
+from datetime import datetime
 from glob import glob
 import numpy as np
 import os
 import os.path as path
 from sys import argv
 from time import perf_counter as perf
+
+import cv2 as cv
 
 # funções utilitárias
 
@@ -27,90 +31,107 @@ tsi = perf()
 # obtendo argumentos da linha de comando
 
 psr = argparse.ArgumentParser(description="""
-    Script para gerar o heatmap do dataset.
+    Script para gerar os heatmaps do dataset.
 """)
 
-psr.add_argument("-s", type=int, default=416, help="Tamanho do heatmap (default=416).")
+psr.add_argument("-s", type=int, default=416, help="Tamanho dos heatmaps (default=416).")
+psr.add_argument("p", help="Caminho para salvar os heatmaps.")
 
-size = psr.parse_args().s
+args = psr.parse_args()
+size = args.s
+pth = args.p
 
-# entrando na pasta do dataset
+# normalizando paths
+
+pth = path.abspath(path.expanduser(pth))
+
+# entrando na pasta do datasetpth
 
 scr = path.abspath(path.expanduser(path.dirname(argv[0])))
 os.chdir(scr)
 os.chdir("../../projeto/dataset")
-
-# inicializando heatmap
-
-print("Inicializando heatmap...")
-ts1 = perf()
-
-heatmap = np.zeros((size, size), dtype=np.uint8)
-
-ts2 = perf()
-print("Heapmap inicializado em {:.1f}s.".format(ts2-ts1))
 
 # obtendo as bounding boxes
 
 print("Obtendo bounding boxes...")
 ts1 = perf()
 
-bbs = dict(carros=[], garrafas=[], mult=[], xicaras=[])
+bbs = defaultdict(list)
+with os.scandir(".") as scan:
+    for entry in scan:
+        if entry.is_dir():
+            name = entry.name
+            os.chdir(name)
 
-for k in bbs.keys():
-    os.chdir(k)
+            lbls = glob("*.txt")
+            lbls.sort()
+            if "classes.txt" in lbls: lbls.remove("classes.txt")
 
-    lbs = glob("*.txt")
-    if "classes.txt" in lbs: lbs.remove("classes.txt")
+            for lbl in lbls:
+                with open(lbl) as lf:
+                    lines = lf.read().splitlines()
+                for li in lines:
+                    b = li.split()
+                    b = [int(b[0]), float(b[1]), float(b[2]), float(b[3]), float(b[4])]
+                    b = xywh2xyxy(b, size, size)
+                    bbs[name].append(b)
 
-    for lb in lbs:
-        lf = open(lb)
-        lines = lf.read().splitlines()
-        lf.close()
-        for li in lines:
-            b = li.split()
-            b = [int(b[0]), float(b[1]), float(b[2]), float(b[3]), float(b[4])]
-            b = xywh2xyxy(b, size, size)
-            bbs[k].append(b)
-
-    os.chdir("..")
+            #bbs[name].sort()
+            os.chdir("..")
 
 ts2 = perf()
 print("Bounding boxes obtidas em {:.1f}s".format(ts2-ts1))
 
-# gerando o heatmap
+# gerando os heatmaps
 
-print("Gerando heatmap...")
+print("Gerando heatmaps...")
 ts1 = perf()
 
-for _ in bbs.values():
-    for bb in _:
-        for i in range(bb[1], bb[3]):
-            for j in range(bb[2], bb[4]):
-                heatmap[i,j] += 1
+templ = np.zeros((size, size), dtype=np.int)
+hmaps = dict.fromkeys(bbs, deepcopy(templ))
+
+for d, bb in bbs.items():
+    for b in bb:
+        hmaps[d][b[1]:b[3], b[2]:b[4]] += 1
+print(hmaps["train"][160:170, 150:160])
+# print(hmaps["val"][205:215, 205:215])
+# total = deepcopy(templ)
+# for h in hmaps.values():
+#     total = np.add(total, h)
+# hmaps["TOTAL"] = total
+#
+# print(hmaps)
 
 ts2 = perf()
 print("Heatmap gerado em {:.1f}s".format(ts2-ts1))
-
-# normalizando os pixels de 0-255
-
-print("Normalizando os pixels...")
-ts1 = perf()
-
-maxi = np.amax(heatmap)
-for i in range(size):
-    for j in range(size):
-        norm = 255 - (heatmap.item((i, j)) * 255 // maxi)
-        heatmap.itemset((i, j), norm)
-
-ts2 = perf()
-print("Pixels normalizados em {:.1f}s".format(ts2-ts1))
-
-# mostrando o heatmap
-
-tsf = perf()
-print("Tempo total de execução: {:.1f}s".format(tsf-tsi))
-
-cv.imshow("HEATMAP", heatmap)
-cv.waitKey(0)
-cv.destroyAllWindows()
+#
+# # normalizando os pixels de 0-255
+#
+# print("Normalizando os pixels...")
+# ts1 = perf()
+#
+# norm = lambda v, maxi: 255 - (v*255 // maxi)
+# for d, h in hmaps.items():
+#     maxi = np.amax(h)
+#     hmaps[d][:] = norm(hmaps[d][:], maxi)
+#
+# ts2 = perf()
+# print("Pixels normalizados em {:.1f}s".format(ts2-ts1))
+#
+# # salvando os heatmaps
+#
+# print("Salvando heatmaps...")
+# ts1 = perf()
+#
+# for d, h in hmaps.items():
+#     now = datetime.now().strftime("%d-%m-%Y-%H:%M:%S")
+#     fname = "{0}-{1}x{1}-{2}.jpg".format(d, size, now)
+#     cv.imwrite(path.join(pth, fname), h)
+#
+# ts2 = perf()
+# print("Heatmaps salvos em {:.1f}s.".format(ts2-ts1))
+#
+# # tempo total de execução
+#
+# tsf = perf()
+# print("Tempo total de execução: {:.1f}s".format(tsf-tsi))
