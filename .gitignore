@@ -1,3 +1,14 @@
+# Específico do repo ----------------------------
+
+# Pesos do YOLO (principalmente da versão 3) são maiores que 100MB
+# Assim, não podem ser commitados
+
+*.pt
+*.pth
+*.weights
+
+# Provido pelo GitHub ---------------------------
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
