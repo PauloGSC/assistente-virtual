@@ -75,7 +75,7 @@ Links de conteúdos, sites e materiais úteis para a capacitação e desenvolvim
 
 &nbsp;
 
-- [Tutorial detalhado de Faster-RCNN com PyTorch](https://medium.com/@fractaldle/guide-to-build-faster-rcnn-in-pytorch-95b10c273439)
+- [Non-maximum suppression](https://www.quora.com/How-does-non-maximum-suppression-work-in-object-detection)
 
 &nbsp;
 
