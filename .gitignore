@@ -6,6 +6,12 @@
 *.pt
 *.pth
 *.weights
+darknet53.conv.74
+yolov3-tiny.conv.15
+
+# Diretório com uma amostra estratificada do dataset
+
+amostra/
 
 # Provido pelo GitHub ---------------------------
 
