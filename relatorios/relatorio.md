@@ -17,3 +17,4 @@
 |      |     | 3 | Rotulagem do dataset |
 |      |     | 4 | Elaboração do detector de objetos |
 |      | 07  | 1 | Elaboração do detector de objetos |
+|      |     | 2 | Elaboração do detector de objetos |
