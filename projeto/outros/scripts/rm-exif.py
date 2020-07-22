@@ -7,10 +7,10 @@ from subprocess import run, DEVNULL
 # obtendo argumentos da linha de comando
 
 psr = argparse.ArgumentParser(description="""
-    Script para remover informações EXIF de imagens.
+    Script para remover informações EXIF de arquivos.
 """)
 
-psr.add_argument("p", help="Caminho das imagens.")
+psr.add_argument("p", help="Caminho dos arquivos.")
 
 p = psr.parse_args().p
 
@@ -22,8 +22,8 @@ p = path.abspath(path.expanduser(p))
 
 os.chdir(p)
 
-com1 = "exiftool -all= *.jpg"
+com1 = "exiftool -all= *"
 run(com1, shell=True)
 
-com2 = "rm *.jpg_original"
+com2 = "rm *_original"
 run(com2, shell=True, stderr=DEVNULL)
