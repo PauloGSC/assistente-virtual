@@ -34,5 +34,22 @@ Para tal, o eletricista estará equipado com uma câmera que registrará as ativ
 
 Todavia, em virtude da alta complexidade em implementar o sistema descrito acima, ficou acertado que, em um primeiro momento, o objetivo do projeto seria apenas desenvolver um programa que acompanharia (de modo visual) a execução de uma dada tarefa, informando a próxima etapa a ser feita até o cumprimento do processo. O ambiente que servirá de base para a coleta de imagens, a definição das tarefas e a construção do algoritmo será um alheio ao do setor elétrico, uma vez que o objetivo é somente implementar um "programa simples de acompanhamento visual de tarefas".
 
+### :balance_scale: Licenciamento
+
+Os códigos do projeto estão atualmente licenciados da seguinte forma:
+
+- O modelo (rede neural) presente na pasta `projeto/projeto` foi baseado no repositório da empresa Ultralytics, presente [neste link](https://www.github.com/ultralytics/yolov3). Esse repositório está sob a licença GPL 3.0; portanto, o código modificado do presente repositório também encontra-se sob a mesma licença ([cópia][gpl])
+- Os _scripts shell_ que foram usados no decorrer do projeto - contidos na pasta `projeto/outros/scripts` - são originais e escritos pelos autores deste repositório, e recebem a licença MIT ([cópia][mit])
+- Os arquivos `.odg` e `.png` (com exceção de `.assets/modelo.png`) são originais e desenvolvidos pelos autores deste repositório, e estão sob a licença MIT ([cópia][mit]
+
+As imagens e vídeos coletados para o projeto estão atualmente licenciados do seguinte modo:
+
+- Os datasets antigos e que já foram usados/não foram usados no projeto estão hospedados no [Kaggle][kaggle] e listados no arquivo [datasets.md](projeto/outros/markdowns/datasets.md); em geral, recebem a licença CC BY-NC-SA (para maiores detalhes, visitar o dataset)
+- Os datasets presentes neste repositório ainda estão sendo usados para o treinamento do modelo; assim que forem utilizados, serão retirados do repositório, armazenadas no [Kaggle][kaggle] e licenciadas sob uma licença Creative Commons
+
 
 [form]: documentos/Formulario%20Unico%20de%20Proposta.pdf
+[kaggle]: https://www.kaggle.com
+
+[gpl]: GPL.txt
+[mit]: MIT.txt
