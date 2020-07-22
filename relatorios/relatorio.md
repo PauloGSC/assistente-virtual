@@ -18,3 +18,4 @@
 |      |     | 4 | Elaboração do detector de objetos |
 |      | 07  | 1 | Elaboração do detector de objetos |
 |      |     | 2 | Elaboração do detector de objetos |
+|      |     | 3 | Treinamento do detector de objetos |
