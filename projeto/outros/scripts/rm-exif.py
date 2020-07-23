@@ -10,7 +10,7 @@ psr = argparse.ArgumentParser(description="""
     Script para remover informações EXIF de arquivos.
 """)
 
-psr.add_argument("p", help="Caminho dos arquivos.")
+psr.add_argument("p", help="Diretório com os arquivos.")
 
 p = psr.parse_args().p
 
@@ -26,4 +26,7 @@ com1 = "exiftool -all= *"
 run(com1, shell=True)
 
 com2 = "rm *_original"
+# caso nenhum arquivo teve seus metadados removidos,
+# não haverá arquivos *_original; nesse caso, o programa resulta em erro e,
+# portanto, deve-se silenciá-lo (redirecionando para /dev/null)
 run(com2, shell=True, stderr=DEVNULL)

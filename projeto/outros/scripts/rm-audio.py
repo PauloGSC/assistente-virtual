@@ -11,9 +11,10 @@ psr = argparse.ArgumentParser(description="""
 	  formatter_class=argparse.RawDescriptionHelpFormatter
 )
 
-psr.add_argument("ps", help="Caminho do diretório com os vídeos.")
-psr.add_argument("pd", help="Caminho para guardar os vídeos sem áudio.")
-psr.add_argument("-ext", default="mp4", help="Extensão dos vídeos. (default=mp4)")
+psr.add_argument("ps", help="Caminho com o(s) vídeo(s) (arquivo ou diretório).")
+psr.add_argument("pd", help="Diretório para guardar os vídeos sem áudio.")
+psr.add_argument("-ext", nargs="*", default="['mp4']",
+				 help="Lista com as extensões dos vídeos. (default=[mp4])")
 
 args = psr.parse_args()
 
@@ -28,9 +29,12 @@ if not path.exists(pd): os.makedirs(pd)
 
 # obtendo a lista de vídeos
 
-os.chdir(ps)
-vids = glob("*.{}".format(args.ext))
-vids.sort()
+if path.isfile(ps):
+	vids = [ps]
+elif path.isdir(ps):
+	os.chdir(ps)
+	vids = glob("*.{}".format(args.ev))
+	vids.sort()
 
 # removendo o áudio dos vídeos e salvando-os
 

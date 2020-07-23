@@ -11,7 +11,7 @@ psr = argparse.ArgumentParser(description="""
 	Caso -t e -to sejam passadas, -t tem prioridade."""
 )
 
-psr.add_argument("ps", help="Caminho do diretório dos vídeos.")
+psr.add_argument("ps", help="Caminho com o(s) vídeo(s) (arquivo ou diretório).")
 
 psr.add_argument("-ev", nargs="*", default="['mp4']",
 				 help="Lista com as extensões dos vídeos. (default=['mp4'])")
@@ -28,7 +28,7 @@ psr.add_argument("-q", type=int, default=1,
 				 help="Qualidade dos frames extraídos. (default=1)")
 psr.add_argument("-ef", default="jpg",
 				 help="Extensão dos frames extraídos. (default=jpg)")
-psr.add_argument("pd", help="Caminho do diretório dos frames.")
+psr.add_argument("pd", help="Diretório para guardar os frames.")
 
 args = psr.parse_args()
 
@@ -41,23 +41,27 @@ pd = path.abspath(path.expanduser(args.pd))
 
 if not path.exists(pd): os.makedirs(pd)
 
-# obtendo a lista de vídeos
+# obtendo o(s) vídeo(s)
 
-os.chdir(ps)
-
-vids = glob("*.{}".format(args.ev))
-vids.sort()
+vids = []
+if path.isfile(ps):
+	vids.append(ps)
+elif path.isdir(ps):
+	for e in args.ev:
+		vs = glob(path.join(ps, "*.{}".format(e)))
+		vs.sort()
+		vids.extend(vs)
 
 # extraindo os frames
 
 for v in vids:
 	p1 = path.join(ps, v)
-	pref = path.splitext(v)[0]
+	pref = path.splitext(path.basename(v))[0]
 	fr = "{}-%03d.{}".format(pref, args.ef)
 	p2 = path.join(pd, fr)
 
-	com = "ffmpeg -i {0} -ss {1} {5} {6} -r {2} -q {3} {4}"\
-		  .format(p1, args.s, args.r, args.q, p2,
+	com = "ffmpeg -y -i {0} -ss {1} {5} {6} -r {2} -q {3} {4}"\
+		  .format(p1, args.ss, args.r, args.q, p2,
 		  		  "-t "+args.t if args.t else "",
 				  "-to "+args.to if args.to else "")
 	run(com, shell=True)
@@ -67,20 +71,20 @@ for v in vids:
 
 # obtendo frames -001
 
-# os.chdir(pd)
-# rem = glob("*-001.{}".format(args.ef))
-# rem.sort()
-# for r in rem:
-# 	os.remove(r)
-#
-# # renomeando os arquivos para compensar a falta dos arquivos -001
-#
-# arqs = os.listdir()
-# arqs.sort()
-#
-# for f in arqs:
-# 	num = int(f[f.rfind("-")+1:f.rfind(".")])
-# 	rep = f[f.rfind("-")+1:]
-# 	ant = str(num-1).zfill(3) + "." + args.ef
-# 	novo = f.replace(rep, ant)
-# 	os.rename(f, novo)
+os.chdir(pd)
+rem = glob("*-001.{}".format(args.ef))
+rem.sort()
+for r in rem:
+	os.remove(r)
+
+# renomeando os arquivos para compensar a falta dos arquivos -001
+
+arqs = os.listdir()
+arqs.sort()
+
+for f in arqs:
+	num = int(f[f.rfind("-")+1:f.rfind(".")])
+	rep = f[f.rfind("-")+1:]
+	ant = str(num-1).zfill(3) + "." + args.ef
+	novo = f.replace(rep, ant)
+	os.rename(f, novo)
