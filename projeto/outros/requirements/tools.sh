@@ -1,4 +1,5 @@
-bash /.assets/update.sh
+# requerimentos para executar as tarefas relacionadas ao dataset do projeto
+# manipulação de imagens e labels
 
 # programa para rotular imagens
 pip3 install --upgrade labelImg

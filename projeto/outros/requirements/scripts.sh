@@ -1,4 +1,4 @@
-bash /.assets/update.sh
+# requerimentos para rodar os scripts do projeto (/projeto/outros/scripts)
 
 # programa para operações com vídeos
 sudo apt install -y ffmpeg
