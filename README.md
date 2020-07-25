@@ -23,10 +23,6 @@ da [UFFS campus Chapecó](https://www.uffs.edu.br/campi/chapeco).
   - [GitHub](https://github.com/henriqueherrera)
   - [LinkedIn](http://linkedin.com/in/richard-herrera-b096a8187)
 
-- Raphael Borges dos Santos Filho (voluntário)
-  - [GitHub](http://github.com/oraphaborges)
-  - [LinkedIn](https://br.linkedin.com/in/raphael-borges-63a04591)
-
 ### :pen: Descrição
 
 O objetivo descrito no [formulário][form] do projeto é elaborar um programa que auxilie em tempo real um eletricista nas tarefas a serem realizadas (e.g., instalação de um sistema de aterramento temporário).
@@ -36,16 +32,28 @@ Todavia, em virtude da alta complexidade em implementar o sistema descrito acima
 
 ### :balance_scale: Licenciamento
 
-Os códigos do projeto estão atualmente licenciados da seguinte forma:
+Os códigos do projeto estão licenciados da seguinte forma:
 
 - O modelo (rede neural) presente na pasta `projeto/projeto` foi baseado no repositório da empresa Ultralytics, presente [neste link](https://www.github.com/ultralytics/yolov3). Esse repositório está sob a licença GPL 3.0; portanto, o código modificado do presente repositório também encontra-se sob a mesma licença ([cópia][gpl])
-- Os _scripts shell_ que foram usados no decorrer do projeto - contidos na pasta `projeto/outros/scripts` - são originais e escritos pelos autores deste repositório, e recebem a licença MIT ([cópia][mit])
-- Os arquivos `.odg` e `.png` (com exceção de `.assets/modelo.png`) são originais e desenvolvidos pelos autores deste repositório, e estão sob a licença MIT ([cópia][mit])
+- Os _scripts shell_ que foram usados no decorrer do projeto - contidos na pasta `projeto/outros/scripts` - são originais e escritos pelo autor deste repositório, e recebem a licença MIT ([cópia][mit])
+- Os arquivos `.odg` e `.png` do diretório `.assets` são originais e desenvolvidos pelo autor deste repositório, e estão sob a licença MIT ([cópia][mit])
 
-As imagens e vídeos coletados para o projeto estão atualmente licenciados do seguinte modo:
+O dataset presente neste repositório está licenciado do seguinte modo:
 
-- Os datasets antigos e que já foram usados/não foram usados no projeto estão hospedados no [Kaggle][kaggle] e listados no arquivo [datasets.md](projeto/outros/markdowns/datasets.md); em geral, recebem a licença CC BY-NC-SA (para maiores detalhes, visitar o dataset)
-- Os datasets presentes neste repositório ainda estão sendo usados para o treinamento do modelo; assim que forem utilizados, serão retirados do repositório, armazenadas no [Kaggle][kaggle] e licenciadas sob uma licença Creative Commons
+- As imagens recebem as seguintes licenças:
+
+| Imagens | Copyright | Licença | Referência | Link |
+|:-------:|:---------:|:-------:|:----------:|:----:|
+| carro-000-\*.jpg - carro-096-*.jpg\ | © 2020 Paulo Gabriel Sena Comasetto | [CC BY-NC-SA 4.0][cc by-nc-sa 4.0] |||
+| carro-097-*.jpg |||| [Link](http://www.vision.caltech.edu/pmoreels/Datasets/Giuseppe_Toys_03/) |
+| carro-100-*.jpg || [Pixabay License](https://pixabay.com/service/license/) |||
+| carro-101-*.jpg || [Unsplash License](https://unsplash.com/license) |||
+| xicara-000-\*.jpg - xicara-099-\*.jpg | © 2020 Paulo Gabriel Sena Comasetto | [CC BY-NC-SA 4.0][cc by-nc-sa 4.0] |||
+| xicara-101-*.jpg ||| Sapp, Benjamin & Saxena, Ashutosh & Ng, Andrew. (2008). A Fast Data Collection and Augmentation Procedure for Object Recognition.. 1402-1408. | [Link](http://ai.stanford.edu/~asaxena/robotdatacollection/dataset.html) |
+| xicara-103-*.jpg ||| A Large-Scale Hierarchical Multi-View RGB-D Object Dataset; Kevin Lai, Liefeng Bo, Xiaofeng Ren, and Dieter Fox; IEEE International Conference on Robotics and Automation (ICRA), May 2011 | [Link](http://rgbd-dataset.cs.washington.edu/dataset/rgbd-dataset_full/) |
+| xicara-104-*.jpg || [Pixabay License](https://pixabay.com/service/license/) |||
+
+- As labels/anotações das imagens são copyright dos autores (© 2020 Paulo Gabriel Sena Comasetto and Richard Henrique Herrera Silva) e estão sob a licença [CC BY-NC-SA 4.0][cc by-nc-sa 4.0]
 
 
 [form]: documentos/Formulario%20Unico%20de%20Proposta.pdf
@@ -53,3 +61,5 @@ As imagens e vídeos coletados para o projeto estão atualmente licenciados do s
 
 [gpl]: GPL.txt
 [mit]: MIT.txt
+
+[cc by-nc-sa 4.0]: https://creativecommons.org/licenses/by-nc-sa/4.0/
