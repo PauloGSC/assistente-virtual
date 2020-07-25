@@ -1,4 +1,4 @@
-# Específico do repo ----------------------------
+# Específico do repo -----------------------------------------------------------
 
 # Pesos do YOLO (principalmente da versão 3) são maiores que 100MB
 # Assim, não podem ser commitados
@@ -9,11 +9,11 @@
 darknet53.conv.74
 yolov3-tiny.conv.15
 
-# Diretório com uma amostra estratificada do dataset
+# Diretório com uma amostra do dataset
 
 amostra/
 
-# Provido pelo GitHub ---------------------------
+# Provido pelo GitHub ----------------------------------------------------------
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
