@@ -34,8 +34,8 @@ Todavia, em virtude da alta complexidade em implementar o sistema descrito acima
 
 Os códigos do projeto estão licenciados da seguinte forma:
 
-- O modelo (rede neural) presente na pasta `projeto/projeto` foi baseado no repositório da empresa Ultralytics, presente [neste link](https://www.github.com/ultralytics/yolov3). Esse repositório está sob a licença GPL 3.0; portanto, o código modificado do presente repositório também encontra-se sob a mesma licença ([cópia][gpl])
-- Os _scripts shell_ que foram usados no decorrer do projeto - contidos na pasta `projeto/scripts` - são originais e escritos pelo autor deste repositório, e recebem a licença MIT ([cópia][mit])
+- O modelo (rede neural) presente na pasta `projeto` foi baseado no repositório da empresa Ultralytics, presente [neste link](https://www.github.com/ultralytics/yolov3). Esse repositório está sob a licença GPL 3.0; portanto, o código modificado do presente repositório também encontra-se sob a mesma licença ([cópia][gpl])
+- Os _scripts shell_ que foram usados no decorrer do projeto - contidos na pasta `scripts` - são originais e escritos pelo autor deste repositório, e recebem a licença MIT ([cópia][mit])
 - Os arquivos `.odg` e `.png` do diretório `.assets` são originais e desenvolvidos pelo autor deste repositório, e estão sob a licença MIT ([cópia][mit])
 
 O dataset presente neste repositório está licenciado do seguinte modo:
