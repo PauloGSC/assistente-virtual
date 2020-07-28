@@ -55,7 +55,6 @@ with os.scandir() as scan:
             imgs = glob("*.jpg")
             imgs.sort()
             n2 = round(len(imgs) / tot_img * n)
-            print("{} / {} * {} = {}".format(len(imgs), tot_img, n, n2))
             samp = sample(imgs, n2)
 
             lbls = []
