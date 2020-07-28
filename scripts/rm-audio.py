@@ -17,7 +17,7 @@ psr.add_argument("-ev", nargs="*", default=["mp4"],
 
 args = psr.parse_args()
 
-# normalizando os paths
+# normalizando paths
 
 ps = path.abspath(path.expanduser(args.ps))
 pd = path.abspath(path.expanduser(args.pd))

@@ -14,12 +14,13 @@ psr.add_argument("-q", default=100, type=int, help="Qualidade do jpeg (default=1
 
 args = psr.parse_args()
 
-p = args.p
+# obtendo argumentos
+
 q = args.q
 
 # normalizando paths
 
-p = path.abspath(path.expanduser(p))
+p = path.abspath(path.expanduser(args.p))
 
 # convertendo arquivos
 

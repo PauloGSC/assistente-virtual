@@ -58,8 +58,13 @@ with os.scandir() as scan:
             print("{} / {} * {} = {}".format(len(imgs), tot_img, n, n2))
             samp = sample(imgs, n2)
 
-            lbls = [path.splitext(i)[0]+".txt" for i in samp]
+            lbls = []
+            for i in samp:
+                lab = path.splitext(i)[0] + ".txt"
+                if path.exists(lab):
+                    lbls.append(lab)
             samp.extend(lbls)
+            samp.sort()
 
             for s in samp:
                 sub_dd = path.join(dd, ent.name)

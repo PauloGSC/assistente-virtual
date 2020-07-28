@@ -14,7 +14,7 @@ psr = argparse.ArgumentParser(description="""
 
 psr.add_argument("ds", help="Diretório raiz.")
 psr.add_argument("p", type=float,
-                 help="Porcentagem dos dados para o diretório de 'train' (0 <= p <= 1).\
+                 help="Porcentagem do dataset para o diretório 'train' (0 <= p <= 1).\
                        O restante irá para o diretório 'test'.")
 psr.add_argument("-dd", default="", help="Diretório para guardar os subdiretórios 'train' e 'test'.")
 
@@ -51,8 +51,15 @@ with os.scandir() as scan:
 
             n = round(p * len(imgs))
             train = sample(imgs, n)
-            lbls = [path.splitext(im)[0]+".txt" for im in train]
+
+            lbls = []
+            for i in train:
+                lab = path.splitext(i)[0] + ".txt"
+                if path.exists(lab):
+                    lbls.append(lab)
             train.extend(lbls)
+            train.sort()
+
             for d in train:
                 new = path.join(tr, d)
                 os.rename(d, new)
