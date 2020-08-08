@@ -1,8 +1,8 @@
-## Artigos
+# Artigos
 
 Aqui devem ser guardados os artigos científicos que interessem ao projeto.
 
-#### Convenções
+### Convenções
 
 - Deve-se salvar o artigo na pasta correspondente. Caso o artigo seja de uma categoria diferente, criar a pasta apropriada.
 
