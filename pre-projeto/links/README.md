@@ -39,7 +39,7 @@
 
 - [Explicação de batch normalization](https://www.learnopencv.com/batch-normalization-in-deep-networks/)
 - [Discussão sobre fine tuning](https://flyyufelix.github.io/2016/10/03/fine-tuning-in-keras-part1.html)
-https://www.quora.com/What-is-the-difference-between-transfer-learning-and-fine-tuning
+- [Fórum sobre Transfer Learning/Fine-tuning](https://www.quora.com/What-is-the-difference-between-transfer-learning-and-fine-tuning)
 - [Revisão detalhada de Transfer Learning](https://ruder.io/transfer-learning/)
 - [Resumo de Transfer Learning](https://machinelearningmastery.com/transfer-learning-for-deep-learning/)
 
