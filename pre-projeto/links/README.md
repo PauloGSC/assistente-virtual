@@ -43,14 +43,13 @@
 - [Fórum sobre Transfer Learning/Fine-tuning](https://www.quora.com/What-is-the-difference-between-transfer-learning-and-fine-tuning)
 - [Revisão detalhada de Transfer Learning](https://ruder.io/transfer-learning/)
 - [Resumo de Transfer Learning](https://machinelearningmastery.com/transfer-learning-for-deep-learning/)
-- [Artigo de Transfer Learning (mais denso)](ftp://ftp.cs.wisc.edu/machine-learning/shavlik-group/torrey.handbook09.pdf)
 
 ### CNNs
 
 - Guia de CNNs para iniciantes: [1](https://adeshpande3.github.io/A-Beginner%27s-Guide-To-Understanding-Convolutional-Neural-Networks/), [2](https://adeshpande3.github.io/adeshpande3.github.io/A-Beginner's-Guide-To-Understanding-Convolutional-Neural-Networks-Part-2/) e [3](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
 - [Overview sobre CNN](https://medium.com/dataseries/basic-overview-of-convolutional-neural-network-cnn-4fcc7dbb4f17)
 - [Student Notes: Convolutional Neural Networks Introduction](https://indoml.com/2018/03/07/student-notes-convolutional-neural-networks-cnn-introduction/)
-- [Slides de CNN de Stanford](http://cs231n.stanford.edu/slides/) e [Complemento desses slides](https://cs231n.github.io/)
+- [Slides de CNN de Stanford](http://cs231n.stanford.edu/slides/), [Vídeos das aulas](https://www.youtube.com/playlist?list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk) e [Complemento dos slides](https://cs231n.github.io/)
 
 ### Pytorch
 
