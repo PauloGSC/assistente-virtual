@@ -42,6 +42,7 @@
 - [Fórum sobre Transfer Learning/Fine-tuning](https://www.quora.com/What-is-the-difference-between-transfer-learning-and-fine-tuning)
 - [Revisão detalhada de Transfer Learning](https://ruder.io/transfer-learning/)
 - [Resumo de Transfer Learning](https://machinelearningmastery.com/transfer-learning-for-deep-learning/)
+- [Artigo de Transfer Learning (mais denso)](ftp://ftp.cs.wisc.edu/machine-learning/shavlik-group/torrey.handbook09.pdf)
 
 ### CNNs
 
