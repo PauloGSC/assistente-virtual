@@ -27,6 +27,7 @@
 
 - [Discussão sobre hiperparâmetros](https://towardsdatascience.com/what-are-hyperparameters-and-how-to-tune-the-hyperparameters-in-a-deep-neural-network-d0604917584a)
 - [Discussão sobre funções de ativação](https://www.analyticsvidhya.com/blog/2020/01/fundamentals-deep-learning-activation-functions-when-to-use-them/)
+- [Explanação sobre otimizadores](https://ruder.io/optimizing-gradient-descent/)
 - [Explicação sobre gradiente descendente (excelente)](https://medium.com/@abhinav.mahapatra10/beginner-ml-basics-gradient-descent-31cc0732676f)
 - [Explicação sobre momentum (muito boa)](https://medium.com/@abhinav.mahapatra10/ml-advanced-momentum-in-machine-learning-what-is-nesterov-momentum-ad37ce1935fc)
 - [Explicação sobre taxa de aprendizado](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/)
