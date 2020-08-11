@@ -76,6 +76,7 @@
 - [Precisão, Recall, AP, mAP](https://medium.com/@yanfengliux/the-confusing-metrics-of-ap-and-map-for-object-detection-3113ba0386ef)
 - [AP e mAP](https://tarangshah.com/blog/2018-01-27/what-is-map-understanding-the-statistic-of-choice-for-comparing-object-detection-models/)
 - [Explicação sobre métricas em ML](https://medium.com/@vitorborbarodrigues/m%C3%A9tricas-de-avalia%C3%A7%C3%A3o-acur%C3%A1cia-precis%C3%A3o-recall-quais-as-diferen%C3%A7as-c8f05e0a513c)
+- [Explicação mais visual de AP e mAP](https://kharshit.github.io/blog/2019/09/20/evaluation-metrics-for-object-detection-and-segmentation)
 - [Non-maximum suppression](https://www.quora.com/How-does-non-maximum-suppression-work-in-object-detection)
 
 ### YOLO
