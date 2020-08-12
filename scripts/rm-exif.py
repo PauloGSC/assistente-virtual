@@ -25,7 +25,7 @@ os.chdir(p)
 com1 = "exiftool -all= *"
 run(com1, shell=True)
 
-com2 = "rm *_original"
+com2 = "rm *original"
 # caso nenhum arquivo teve seus metadados removidos,
 # não haverá arquivos *_original; nesse caso, o programa resulta em erro e,
 # portanto, deve-se silenciá-lo (redirecionando para /dev/null)
