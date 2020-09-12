@@ -22,15 +22,15 @@ projeto/runs/*
 pycocotools/*
 gcp_test*.sh
 
-data/output/img/*
-data/output/vid/*
+projeto/data/output/img/*
+projeto/data/output/vid/*
 
-results*
-LR*
-train_batch*
-test_batch*
-*.shapes
-*.npy
+projeto/**/results*
+projeto/**/LR*
+projeto/**/train_batch*
+projeto/**/test_batch*
+projeto/**/*.shapes
+projeto/**/*.npy
 
 # MATLAB GitIgnore -------------------------------------------------------------
 
