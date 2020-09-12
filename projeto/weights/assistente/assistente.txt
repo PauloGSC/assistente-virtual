@@ -1,0 +1,1 @@
+Colocar os pesos do assistente virtual nesse diretório.

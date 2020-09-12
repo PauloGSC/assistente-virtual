@@ -1,17 +1,27 @@
 # Projeto
 
-Contém os códigos, datasets, modelos, arquivos de pesos, arquivos de configuração e outros scripts do projeto.
+Para detectar os objetos (carrinho, DTC e xícara) em imagens/vídeos:
 
-### Workflow do projeto
+1) Instalar as bibliotecas necessárias:
 
-![Modelo](/.assets/workflow.png)
+```shell
+pip3 install -Ur requirements.txt
+```
 
-### Tarefa do projeto
+2.1) Para detectar imagens, colocar os arquivos no diretório `/projeto/data/samples/img`
 
-1. Posicionar um carrinho de brinquedo
-2. Posicionar uma xícara
-3. Posicionar um detector de tensão por contato (DTC)
+2.2) Para detectar vídeos, colocar os arquivos no diretório `/projeto/data/samples/vid`
 
-##### FSM da tarefa
+3) Escolher uma das quatro estratégias na pasta `/estrategias` e baixar o respectivo arquivo de peso (presentes nos arquivos `pesos.txt`)
 
-![FSM](/.assets/fsm.png)
+4) Mover o arquivo de pesos para dentro do diretório `/projeto/weights/assistente`
+
+5) Executar o arquivo `/projeto/detect.py`, passando os argumentos necessários;  para obter uma lista dos argumentos possíveis, executar:
+
+```shell
+# cd no diretório assistente-virtual/projeto
+python3 detect.py --help
+```
+
+- Como outra opção, pode-se abrir o _notebook_ `/projeto/treinamento.ipynb` no ambiente do Google Colab, que fornece GPUs online para treinamento/detecção mais rápidos
+- Os passos para detecção são similares aos acima, e o _notebook_ também possui instruções informativas para guiar o processo

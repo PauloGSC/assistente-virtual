@@ -1,17 +1,52 @@
 # Específico do repo -----------------------------------------------------------
 
-# Pesos do YOLO (principalmente da versão 3) são maiores que 100MB
-# Assim, não podem ser commitados
+*.jpeg
+*.bmp
+*.tif
+*.tiff
+*.heic
+*.JPG
+*.JPEG
+*.PNG
+*.BMP
+*.TIF
+*.TIFF
+*.HEIC
+*.mov
+*.MOV
+*.json
 
+storage.googleapis.com
+projeto/runs/*
+
+pycocotools/*
+gcp_test*.sh
+
+data/output/img/*
+data/output/vid/*
+
+results*
+LR*
+train_batch*
+test_batch*
+*.shapes
+*.npy
+
+# MATLAB GitIgnore -------------------------------------------------------------
+
+*.m~
+*.mat
+!targets*.mat
+
+# Neural Network weights -------------------------------------------------------
+
+*.weights
 *.pt
 *.pth
-*.weights
+*.onnx
+*.mlmodel
 darknet53.conv.74
 yolov3-tiny.conv.15
-
-# Diretório com uma amostra do dataset
-
-amostra/
 
 # Provido pelo GitHub ----------------------------------------------------------
 

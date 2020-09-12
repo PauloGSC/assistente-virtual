@@ -1,0 +1,15 @@
+# pip install -Ur requirements.txt
+
+tqdm
+Cython
+numpy
+scipy
+Pillow
+matplotlib
+opencv-python
+torch
+torchvision
+tensorboard
+onnx
+
+git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI
