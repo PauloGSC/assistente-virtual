@@ -15,13 +15,15 @@ da [UFFS campus Chapecó](https://www.uffs.edu.br/campi/chapeco).
 
 ### :man_student: Acadêmico
 
-- Paulo Gabriel Sena Comasetto (bolsista)
+- Paulo Gabriel Sena Comasetto
   - [GitHub](https://github.com/paulogsc)
   - [Lattes](http://lattes.cnpq.br/1331812120349303)
 
 ### :pen: Descrição
 
-O objetivo formal do projeto consistiu em elaborar um algoritmo, utilizando técnicas de Deep Learning, para auxiliar um trabalhador do setor elétrico nas suas tarefas. O programa atuaria como um “assistente virtual”, monitorando e orientando as atividades realizadas pelo profissional. A fim de possibilitar esse acompanhamento, o eletricista estaria equipado com uma câmera de vídeo para o registro das ações do profissional em tempo real. O software receberia a entrada visual captada pela câmera, identificaria a etapa em que o trabalhador se encontra e indicaria o próximo passo a ser executado; caso alguma etapa fosse cumprida na ordem incorreta, o programa também sinalizaria ao profissional. Esse ciclo repetir-se-ia até o cumprimento total da tarefa. Todavia, em virtude da alta complexidade em desenvolver o algoritmo descrito acima, o objetivo de implementar um software completo para assistente virtual precisou ser revisto e relaxado. Neste contexto, buscamos verificar a viabilidade do objetivo original, elaborando um programa que execute a principal função do assistente virtual: reconhecer e detectar determinados objetos em imagens recebidas por uma câmera.    
+O objetivo formal do projeto consistiu em elaborar um algoritmo, utilizando técnicas de Deep Learning, para auxiliar um trabalhador do setor elétrico nas suas tarefas. O programa atuaria como um “assistente virtual”, monitorando e orientando as atividades realizadas pelo profissional. A fim de possibilitar esse acompanhamento, o eletricista estaria equipado com uma câmera de vídeo para o registro das ações do profissional em tempo real. O software receberia a entrada visual captada pela câmera, identificaria a etapa em que o trabalhador se encontra e indicaria o próximo passo a ser executado; caso alguma etapa fosse cumprida na ordem incorreta, o programa também sinalizaria ao profissional. Esse ciclo repetir-se-ia até o cumprimento total da tarefa.
+
+Todavia, em virtude da alta complexidade em desenvolver o algoritmo descrito acima, o objetivo de implementar um software completo para assistente virtual precisou ser revisto e relaxado. Neste contexto, buscamos verificar a viabilidade do objetivo original, elaborando um programa que execute a principal função do assistente virtual: reconhecer e detectar determinados objetos em imagens recebidas por uma câmera.    
 
 ### :balance_scale: Licenciamento
 
@@ -29,7 +31,6 @@ Os códigos do projeto estão licenciados da seguinte forma:
 
 - O modelo (rede neural) presente na pasta `projeto` foi baseado no repositório da empresa Ultralytics, presente [neste link](https://www.github.com/ultralytics/yolov3). Esse repositório está sob a licença GPL 3.0; portanto, o código modificado do presente repositório também encontra-se sob a mesma licença ([cópia][gpl])
 - Os _scripts shell_ que foram usados no decorrer do projeto - contidos na pasta `scripts` - são originais e escritos pelo autor deste repositório, e recebem a licença MIT ([cópia][mit])
-- Os arquivos `.odg` e `.png` do diretório `.assets` são originais e desenvolvidos pelo autor deste repositório, e estão sob a licença MIT ([cópia][mit])
 
 O dataset (`projeto/data/train` e `projeto/data/test`) está licenciado do seguinte modo:
 
