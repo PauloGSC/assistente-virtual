@@ -1,7 +1,7 @@
 import argparse
 from collections import defaultdict as defdict
-from glob import glob
 import csv
+from glob import glob
 import os, os.path as path
 
 
@@ -37,7 +37,6 @@ entradas.sort()
 # itera sobre a lista de arquivos de entrada
 
 for arq in entradas:
-
     # obtém o conteúdo do arquivo de entrada
 
     arq_entrada = open(arq)
